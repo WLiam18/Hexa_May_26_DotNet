@@ -219,3 +219,159 @@ SELECT * FROM dbo.GetEmployeeSalaryReport(2);
 Select * from  Employees
 
 
+
+
+-- Triggers
+
+select * from Employees
+
+Select * from Department
+
+
+CREATE TABLE EmployeeAudit
+(
+AuditId int Identity(1,1) primary key,
+AuditData varchar(max),
+AuditDate datetime
+)
+
+
+CREATE TRIGGER tr_Employee_insert
+ON Employees
+AFTER INSERT
+AS 
+BEGIN
+	DECLARE @Id INT
+	DECLARE @Name varchar(100)
+	DECLARE @AuditData varchar(100)
+	SELECT @ID=EmployeeId,@Name=Name FROM INSERTED
+	SET @AuditData='New Employee added with ID ='+Cast(@ID as VARCHAR(10))+
+	' and Name '+@Name
+
+	INSERT INTO EmployeeAudit(AuditData,AuditDate) VALUES (@AuditData,GETDATE())
+END;
+
+select * from Employees;
+
+select * from EmployeeAudit;
+
+insert into Employees (Name,Gender,Email,City,Salary,MobileNo,DepartmentId)
+Values ('sample','Female','sample@mail.com','Vellore',45000,23876576334,1);
+
+
+CREATE TRIGGER tr_Employee_delete
+ON Employees
+AFTER DELETE
+AS 
+BEGIN
+	DECLARE @Id INT
+	DECLARE @Name varchar(100)
+	DECLARE @AuditData varchar(100)
+	SELECT @ID=EmployeeId,@Name=Name FROM DELETED
+	SET @AuditData='An Employee delete  with ID ='+Cast(@ID as VARCHAR(10))+
+	' and Name '+@Name
+
+	INSERT INTO EmployeeAudit(AuditData,AuditDate) VALUES (@AuditData,GETDATE())
+END;
+
+delete from Employees where EmployeeId=12;
+
+
+ALTER TRIGGER tr_Employee_update
+ON Employees
+FOR UPDATE
+AS 
+BEGIN
+	DECLARE @Id INT
+	DECLARE @old_Name varchar(100),@new_Name varchar(100)
+	DECLARE @old_Salary DECIMAL(10,2), @new_Salary  DECIMAL(10,2)
+	DECLARE @old_Gender varchar(100),@new_Gender varchar(100)
+	DECLARE @old_Email VARCHAR(100), @new_Email  VARCHAR(100)
+	DECLARE @old_City varchar(100),@new_City varchar(100)
+	DECLARE @AuditData varchar(max)
+	
+	select * INTO #UpdatedDataTempTable FROM INSERTED
+
+	WHILE(EXISTS(SELECT EmployeeId FROM #UpdatedDataTempTable))
+	BEGIN
+		SET @AuditData=''
+
+		SELECT TOP 1 @Id=EmployeeId,
+		@new_Name=Name,
+		@new_Gender=Gender,
+		@new_City=City,
+		@new_Email=Email,
+		@new_Salary=Salary FROM #UpdatedDataTempTable
+
+		SELECT 
+		@old_Name=Name,
+		@old_Gender=Gender,
+		@old_City=City,
+		@old_Email=Email,
+		@old_Salary=Salary FROM DELETED where EmployeeId=@Id
+
+		set @AuditData='Employee with id = ' +cast(@Id as varchar(10))+' Changed'
+
+		If(@old_Name<>@new_Name)
+		BEGIN
+		SET @AuditData= @AuditData +' Name from ' +@old_Name +' to '+@new_Name
+		END
+		
+		If(@old_Gender<>@new_Gender)
+		BEGIN
+		SET @AuditData= @AuditData +' Gender from ' +@old_Gender +' to '+@new_Gender
+		END
+		If(@old_City<>@new_City)
+		BEGIN
+		SET @AuditData= @AuditData +' City from ' +@old_City +' to '+@new_City
+		END
+		If(@old_Email<>@new_Email)
+		BEGIN
+		SET @AuditData= @AuditData +' Email from ' +@old_Email +' to '+@new_Email
+		END
+		
+		If(@old_Salary<>@new_Salary)
+		BEGIN
+		SET @AuditData= @AuditData +' Salary from ' + ISNULL(CAST(@old_Salary AS VARCHAR(10)),NULL) +
+		' to '+ISNULL(CAST(@new_Salary as varchar(10)),NULL)
+		END
+		
+	INSERT INTO EmployeeAudit(AuditData,AuditDate) VALUES (@AuditData,GETDATE())
+
+	DELETE FROM #UpdatedDataTempTable WHERE EmployeeId=@ID
+	END
+END;
+
+
+select * from Employees;
+select * from EmployeeAudit
+
+update Employees Set Email='Yokiths@hexaware.com'  where EmployeeId=7
+
+--INSTEAD TRIGGER
+
+create trigger tr_InsteadOfInsert_Employees
+ON Employees
+INSTEAD OF INSERT
+AS
+BEGIN
+	IF EXISTS
+	(
+	SELECT 1 FROM INSERTED WHERE SALARY<10000
+	)
+	BEGIN
+		RAISERROR('Salary should not be less than 10000.',16,1);
+		RETURN;
+	END;
+insert into Employees
+(Name,Gender,City,Salary,Email,MobileNo,DepartmentId)
+SELECT Name,Gender,City,Salary,Email,MobileNo,DepartmentId FROM INSERTED;
+END
+
+
+insert into Employees (Name,Gender,City,Email,Salary)
+Values ('sample','Male','Texas','sample@mail.com',2000) -- error because of instead of triger
+
+
+insert into Employees (Name,Gender,City,Email,Salary)
+Values ('sample','Male','Texas','sample@mail.com',12000)
