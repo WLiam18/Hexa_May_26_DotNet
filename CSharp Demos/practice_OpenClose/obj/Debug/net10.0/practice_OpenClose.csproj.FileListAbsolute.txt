@@ -1,0 +1,15 @@
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_OpenClose/bin/Debug/net10.0/practice_OpenClose
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_OpenClose/bin/Debug/net10.0/practice_OpenClose.deps.json
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_OpenClose/bin/Debug/net10.0/practice_OpenClose.runtimeconfig.json
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_OpenClose/bin/Debug/net10.0/practice_OpenClose.dll
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_OpenClose/bin/Debug/net10.0/practice_OpenClose.pdb
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_OpenClose/obj/Debug/net10.0/practice_OpenClose.GeneratedMSBuildEditorConfig.editorconfig
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_OpenClose/obj/Debug/net10.0/practice_OpenClose.AssemblyInfoInputs.cache
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_OpenClose/obj/Debug/net10.0/practice_OpenClose.AssemblyInfo.cs
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_OpenClose/obj/Debug/net10.0/practice_OpenClose.csproj.CoreCompileInputs.cache
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_OpenClose/obj/Debug/net10.0/practice_OpenClose.sourcelink.json
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_OpenClose/obj/Debug/net10.0/practice_OpenClose.dll
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_OpenClose/obj/Debug/net10.0/refint/practice_OpenClose.dll
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_OpenClose/obj/Debug/net10.0/practice_OpenClose.pdb
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_OpenClose/obj/Debug/net10.0/practice_OpenClose.genruntimeconfig.cache
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_OpenClose/obj/Debug/net10.0/ref/practice_OpenClose.dll

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "practice_OpenClose/1.0.0": {
+        "runtime": {
+          "practice_OpenClose.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "practice_OpenClose/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
