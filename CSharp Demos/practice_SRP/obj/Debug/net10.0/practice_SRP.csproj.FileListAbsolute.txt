@@ -1,0 +1,15 @@
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_SRP/bin/Debug/net10.0/practice_SRP
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_SRP/bin/Debug/net10.0/practice_SRP.deps.json
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_SRP/bin/Debug/net10.0/practice_SRP.runtimeconfig.json
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_SRP/bin/Debug/net10.0/practice_SRP.dll
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_SRP/bin/Debug/net10.0/practice_SRP.pdb
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_SRP/obj/Debug/net10.0/practice_SRP.GeneratedMSBuildEditorConfig.editorconfig
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_SRP/obj/Debug/net10.0/practice_SRP.AssemblyInfoInputs.cache
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_SRP/obj/Debug/net10.0/practice_SRP.AssemblyInfo.cs
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_SRP/obj/Debug/net10.0/practice_SRP.csproj.CoreCompileInputs.cache
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_SRP/obj/Debug/net10.0/practice_SRP.sourcelink.json
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_SRP/obj/Debug/net10.0/practice_SRP.dll
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_SRP/obj/Debug/net10.0/refint/practice_SRP.dll
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_SRP/obj/Debug/net10.0/practice_SRP.pdb
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_SRP/obj/Debug/net10.0/practice_SRP.genruntimeconfig.cache
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_SRP/obj/Debug/net10.0/ref/practice_SRP.dll
