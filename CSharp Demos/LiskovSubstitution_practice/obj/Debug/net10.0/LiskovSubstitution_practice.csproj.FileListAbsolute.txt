@@ -1,0 +1,15 @@
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/LiskovSubstitution_practice/bin/Debug/net10.0/LiskovSubstitution_practice
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/LiskovSubstitution_practice/bin/Debug/net10.0/LiskovSubstitution_practice.deps.json
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/LiskovSubstitution_practice/bin/Debug/net10.0/LiskovSubstitution_practice.runtimeconfig.json
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/LiskovSubstitution_practice/bin/Debug/net10.0/LiskovSubstitution_practice.dll
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/LiskovSubstitution_practice/bin/Debug/net10.0/LiskovSubstitution_practice.pdb
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/LiskovSubstitution_practice/obj/Debug/net10.0/LiskovSubstitution_practice.GeneratedMSBuildEditorConfig.editorconfig
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/LiskovSubstitution_practice/obj/Debug/net10.0/LiskovSubstitution_practice.AssemblyInfoInputs.cache
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/LiskovSubstitution_practice/obj/Debug/net10.0/LiskovSubstitution_practice.AssemblyInfo.cs
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/LiskovSubstitution_practice/obj/Debug/net10.0/LiskovSubstitution_practice.csproj.CoreCompileInputs.cache
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/LiskovSubstitution_practice/obj/Debug/net10.0/LiskovSubstitution_practice.sourcelink.json
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/LiskovSubstitution_practice/obj/Debug/net10.0/LiskovSubstitution_practice.dll
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/LiskovSubstitution_practice/obj/Debug/net10.0/refint/LiskovSubstitution_practice.dll
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/LiskovSubstitution_practice/obj/Debug/net10.0/LiskovSubstitution_practice.pdb
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/LiskovSubstitution_practice/obj/Debug/net10.0/LiskovSubstitution_practice.genruntimeconfig.cache
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/LiskovSubstitution_practice/obj/Debug/net10.0/ref/LiskovSubstitution_practice.dll
