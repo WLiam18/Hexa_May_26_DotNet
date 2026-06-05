@@ -1,0 +1,15 @@
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTest_practice/BankingApp/bin/Debug/net10.0/BankingApp
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTest_practice/BankingApp/bin/Debug/net10.0/BankingApp.deps.json
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTest_practice/BankingApp/bin/Debug/net10.0/BankingApp.runtimeconfig.json
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTest_practice/BankingApp/bin/Debug/net10.0/BankingApp.dll
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTest_practice/BankingApp/bin/Debug/net10.0/BankingApp.pdb
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTest_practice/BankingApp/obj/Debug/net10.0/BankingApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTest_practice/BankingApp/obj/Debug/net10.0/BankingApp.AssemblyInfoInputs.cache
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTest_practice/BankingApp/obj/Debug/net10.0/BankingApp.AssemblyInfo.cs
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTest_practice/BankingApp/obj/Debug/net10.0/BankingApp.csproj.CoreCompileInputs.cache
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTest_practice/BankingApp/obj/Debug/net10.0/BankingApp.sourcelink.json
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTest_practice/BankingApp/obj/Debug/net10.0/BankingApp.dll
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTest_practice/BankingApp/obj/Debug/net10.0/refint/BankingApp.dll
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTest_practice/BankingApp/obj/Debug/net10.0/BankingApp.pdb
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTest_practice/BankingApp/obj/Debug/net10.0/BankingApp.genruntimeconfig.cache
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTest_practice/BankingApp/obj/Debug/net10.0/ref/BankingApp.dll

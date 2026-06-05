@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZjiIkSWAFhE=",
+  "success": true,
+  "projectFilePath": "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTest_practice/BankingApp/BankingApp.csproj",
+  "expectedPackageFiles": [
+    "/Users/williamgiftson/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/williamgiftson/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "/Users/williamgiftson/.nuget/packages/system.collections/4.3.0/system.collections.4.3.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1510",
+      "level": "Warning",
+      "message": "PackageReference System.Collections will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
+      "projectPath": "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTest_practice/BankingApp/BankingApp.csproj",
+      "warningLevel": 1,
+      "filePath": "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTest_practice/BankingApp/BankingApp.csproj",
+      "libraryId": "System.Collections",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}
