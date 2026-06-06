@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "WsifKIU/XA6+mqNvownjV7L7oG8btTepN4CkOPRi3Hn1pKiC9CMPszeGpG6tRqxrbwuSJLCbMby4yiMYPfaTpw==",
+  "dgSpecHash": "PcSEw2rrhSU=",
   "success": true,
-  "projectFilePath": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\UnitTEstingSolution\\BankingConsoleApp\\BankingConsoleApp.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTEstingSolution/BankingConsoleApp/BankingConsoleApp.csproj",
+  "expectedPackageFiles": [
+    "/Users/williamgiftson/.nuget/packages/microsoft.netcore.app.ref/8.0.25/microsoft.netcore.app.ref.8.0.25.nupkg.sha512",
+    "/Users/williamgiftson/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.25/microsoft.aspnetcore.app.ref.8.0.25.nupkg.sha512",
+    "/Users/williamgiftson/.nuget/packages/microsoft.netcore.app.host.osx-arm64/8.0.25/microsoft.netcore.app.host.osx-arm64.8.0.25.nupkg.sha512"
+  ],
   "logs": []
 }

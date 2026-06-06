@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "qmu4l3pgAt4=",
+  "dgSpecHash": "6zy2XcBH0wc=",
   "success": true,
-  "projectFilePath": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\Partial_Sealed_Demo\\Partial_Sealed_Demo.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/Partial_Sealed_Demo/Partial_Sealed_Demo.csproj",
+  "expectedPackageFiles": [
+    "/Users/williamgiftson/.nuget/packages/microsoft.netcore.app.ref/8.0.25/microsoft.netcore.app.ref.8.0.25.nupkg.sha512",
+    "/Users/williamgiftson/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.25/microsoft.aspnetcore.app.ref.8.0.25.nupkg.sha512",
+    "/Users/williamgiftson/.nuget/packages/microsoft.netcore.app.host.osx-arm64/8.0.25/microsoft.netcore.app.host.osx-arm64.8.0.25.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,15 +1,30 @@
-C:\Personal\Hexa May 26 DotNet\CSharp Demos\UnitTEstingSolution\BankingConsoleApp\obj\Debug\net8.0\BankingConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
-C:\Personal\Hexa May 26 DotNet\CSharp Demos\UnitTEstingSolution\BankingConsoleApp\obj\Debug\net8.0\BankingConsoleApp.AssemblyInfoInputs.cache
-C:\Personal\Hexa May 26 DotNet\CSharp Demos\UnitTEstingSolution\BankingConsoleApp\obj\Debug\net8.0\BankingConsoleApp.AssemblyInfo.cs
-C:\Personal\Hexa May 26 DotNet\CSharp Demos\UnitTEstingSolution\BankingConsoleApp\obj\Debug\net8.0\BankingConsoleApp.csproj.CoreCompileInputs.cache
-C:\Personal\Hexa May 26 DotNet\CSharp Demos\UnitTEstingSolution\BankingConsoleApp\obj\Debug\net8.0\BankingConsoleApp.sourcelink.json
-C:\Personal\Hexa May 26 DotNet\CSharp Demos\UnitTEstingSolution\BankingConsoleApp\bin\Debug\net8.0\BankingConsoleApp.exe
-C:\Personal\Hexa May 26 DotNet\CSharp Demos\UnitTEstingSolution\BankingConsoleApp\bin\Debug\net8.0\BankingConsoleApp.deps.json
-C:\Personal\Hexa May 26 DotNet\CSharp Demos\UnitTEstingSolution\BankingConsoleApp\bin\Debug\net8.0\BankingConsoleApp.runtimeconfig.json
-C:\Personal\Hexa May 26 DotNet\CSharp Demos\UnitTEstingSolution\BankingConsoleApp\bin\Debug\net8.0\BankingConsoleApp.dll
-C:\Personal\Hexa May 26 DotNet\CSharp Demos\UnitTEstingSolution\BankingConsoleApp\bin\Debug\net8.0\BankingConsoleApp.pdb
-C:\Personal\Hexa May 26 DotNet\CSharp Demos\UnitTEstingSolution\BankingConsoleApp\obj\Debug\net8.0\BankingConsoleApp.dll
-C:\Personal\Hexa May 26 DotNet\CSharp Demos\UnitTEstingSolution\BankingConsoleApp\obj\Debug\net8.0\refint\BankingConsoleApp.dll
-C:\Personal\Hexa May 26 DotNet\CSharp Demos\UnitTEstingSolution\BankingConsoleApp\obj\Debug\net8.0\BankingConsoleApp.pdb
-C:\Personal\Hexa May 26 DotNet\CSharp Demos\UnitTEstingSolution\BankingConsoleApp\obj\Debug\net8.0\BankingConsoleApp.genruntimeconfig.cache
-C:\Personal\Hexa May 26 DotNet\CSharp Demos\UnitTEstingSolution\BankingConsoleApp\obj\Debug\net8.0\ref\BankingConsoleApp.dll
+C:/Personal/Hexa May 26 DotNet/CSharp Demos/UnitTEstingSolution/BankingConsoleApp/obj/Debug/net8.0/BankingConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:/Personal/Hexa May 26 DotNet/CSharp Demos/UnitTEstingSolution/BankingConsoleApp/obj/Debug/net8.0/BankingConsoleApp.AssemblyInfoInputs.cache
+C:/Personal/Hexa May 26 DotNet/CSharp Demos/UnitTEstingSolution/BankingConsoleApp/obj/Debug/net8.0/BankingConsoleApp.AssemblyInfo.cs
+C:/Personal/Hexa May 26 DotNet/CSharp Demos/UnitTEstingSolution/BankingConsoleApp/obj/Debug/net8.0/BankingConsoleApp.csproj.CoreCompileInputs.cache
+C:/Personal/Hexa May 26 DotNet/CSharp Demos/UnitTEstingSolution/BankingConsoleApp/obj/Debug/net8.0/BankingConsoleApp.sourcelink.json
+C:/Personal/Hexa May 26 DotNet/CSharp Demos/UnitTEstingSolution/BankingConsoleApp/bin/Debug/net8.0/BankingConsoleApp.exe
+C:/Personal/Hexa May 26 DotNet/CSharp Demos/UnitTEstingSolution/BankingConsoleApp/bin/Debug/net8.0/BankingConsoleApp.deps.json
+C:/Personal/Hexa May 26 DotNet/CSharp Demos/UnitTEstingSolution/BankingConsoleApp/bin/Debug/net8.0/BankingConsoleApp.runtimeconfig.json
+C:/Personal/Hexa May 26 DotNet/CSharp Demos/UnitTEstingSolution/BankingConsoleApp/bin/Debug/net8.0/BankingConsoleApp.dll
+C:/Personal/Hexa May 26 DotNet/CSharp Demos/UnitTEstingSolution/BankingConsoleApp/bin/Debug/net8.0/BankingConsoleApp.pdb
+C:/Personal/Hexa May 26 DotNet/CSharp Demos/UnitTEstingSolution/BankingConsoleApp/obj/Debug/net8.0/BankingConsoleApp.dll
+C:/Personal/Hexa May 26 DotNet/CSharp Demos/UnitTEstingSolution/BankingConsoleApp/obj/Debug/net8.0/refint/BankingConsoleApp.dll
+C:/Personal/Hexa May 26 DotNet/CSharp Demos/UnitTEstingSolution/BankingConsoleApp/obj/Debug/net8.0/BankingConsoleApp.pdb
+C:/Personal/Hexa May 26 DotNet/CSharp Demos/UnitTEstingSolution/BankingConsoleApp/obj/Debug/net8.0/BankingConsoleApp.genruntimeconfig.cache
+C:/Personal/Hexa May 26 DotNet/CSharp Demos/UnitTEstingSolution/BankingConsoleApp/obj/Debug/net8.0/ref/BankingConsoleApp.dll
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTEstingSolution/BankingConsoleApp/bin/Debug/net8.0/BankingConsoleApp
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTEstingSolution/BankingConsoleApp/bin/Debug/net8.0/BankingConsoleApp.deps.json
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTEstingSolution/BankingConsoleApp/bin/Debug/net8.0/BankingConsoleApp.runtimeconfig.json
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTEstingSolution/BankingConsoleApp/bin/Debug/net8.0/BankingConsoleApp.dll
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTEstingSolution/BankingConsoleApp/bin/Debug/net8.0/BankingConsoleApp.pdb
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTEstingSolution/BankingConsoleApp/obj/Debug/net8.0/BankingConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTEstingSolution/BankingConsoleApp/obj/Debug/net8.0/BankingConsoleApp.AssemblyInfoInputs.cache
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTEstingSolution/BankingConsoleApp/obj/Debug/net8.0/BankingConsoleApp.AssemblyInfo.cs
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTEstingSolution/BankingConsoleApp/obj/Debug/net8.0/BankingConsoleApp.csproj.CoreCompileInputs.cache
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTEstingSolution/BankingConsoleApp/obj/Debug/net8.0/BankingConsoleApp.sourcelink.json
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTEstingSolution/BankingConsoleApp/obj/Debug/net8.0/BankingConsoleApp.dll
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTEstingSolution/BankingConsoleApp/obj/Debug/net8.0/refint/BankingConsoleApp.dll
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTEstingSolution/BankingConsoleApp/obj/Debug/net8.0/BankingConsoleApp.pdb
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTEstingSolution/BankingConsoleApp/obj/Debug/net8.0/BankingConsoleApp.genruntimeconfig.cache
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTEstingSolution/BankingConsoleApp/obj/Debug/net8.0/ref/BankingConsoleApp.dll

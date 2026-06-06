@@ -1,0 +1,15 @@
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/SimpleBankApp/SimpleBank/bin/Debug/net10.0/SimpleBank
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/SimpleBankApp/SimpleBank/bin/Debug/net10.0/SimpleBank.deps.json
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/SimpleBankApp/SimpleBank/bin/Debug/net10.0/SimpleBank.runtimeconfig.json
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/SimpleBankApp/SimpleBank/bin/Debug/net10.0/SimpleBank.dll
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/SimpleBankApp/SimpleBank/bin/Debug/net10.0/SimpleBank.pdb
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/SimpleBankApp/SimpleBank/obj/Debug/net10.0/SimpleBank.GeneratedMSBuildEditorConfig.editorconfig
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/SimpleBankApp/SimpleBank/obj/Debug/net10.0/SimpleBank.AssemblyInfoInputs.cache
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/SimpleBankApp/SimpleBank/obj/Debug/net10.0/SimpleBank.AssemblyInfo.cs
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/SimpleBankApp/SimpleBank/obj/Debug/net10.0/SimpleBank.csproj.CoreCompileInputs.cache
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/SimpleBankApp/SimpleBank/obj/Debug/net10.0/SimpleBank.sourcelink.json
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/SimpleBankApp/SimpleBank/obj/Debug/net10.0/SimpleBank.dll
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/SimpleBankApp/SimpleBank/obj/Debug/net10.0/refint/SimpleBank.dll
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/SimpleBankApp/SimpleBank/obj/Debug/net10.0/SimpleBank.pdb
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/SimpleBankApp/SimpleBank/obj/Debug/net10.0/SimpleBank.genruntimeconfig.cache
+/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/SimpleBankApp/SimpleBank/obj/Debug/net10.0/ref/SimpleBank.dll

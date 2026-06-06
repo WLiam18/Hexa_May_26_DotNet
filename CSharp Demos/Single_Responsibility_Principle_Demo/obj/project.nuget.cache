@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "cJ/cTsMeFh0=",
+  "dgSpecHash": "n9BJe/USESo=",
   "success": true,
-  "projectFilePath": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\Single_Responsibility_Principle_Demo\\Single_Responsibility_Principle_Demo.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/Single_Responsibility_Principle_Demo/Single_Responsibility_Principle_Demo.csproj",
+  "expectedPackageFiles": [
+    "/Users/williamgiftson/.nuget/packages/microsoft.netcore.app.ref/8.0.25/microsoft.netcore.app.ref.8.0.25.nupkg.sha512",
+    "/Users/williamgiftson/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.25/microsoft.aspnetcore.app.ref.8.0.25.nupkg.sha512",
+    "/Users/williamgiftson/.nuget/packages/microsoft.netcore.app.host.osx-arm64/8.0.25/microsoft.netcore.app.host.osx-arm64.8.0.25.nupkg.sha512"
+  ],
   "logs": []
 }
