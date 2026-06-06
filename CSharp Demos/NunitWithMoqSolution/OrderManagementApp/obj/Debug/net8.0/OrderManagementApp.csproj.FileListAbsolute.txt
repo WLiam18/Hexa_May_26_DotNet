@@ -1,0 +1,15 @@
+C:\Personal\Hexa May 26 DotNet\CSharp Demos\NunitWithMoqSolution\OrderManagementApp\bin\Debug\net8.0\OrderManagementApp.exe
+C:\Personal\Hexa May 26 DotNet\CSharp Demos\NunitWithMoqSolution\OrderManagementApp\bin\Debug\net8.0\OrderManagementApp.deps.json
+C:\Personal\Hexa May 26 DotNet\CSharp Demos\NunitWithMoqSolution\OrderManagementApp\bin\Debug\net8.0\OrderManagementApp.runtimeconfig.json
+C:\Personal\Hexa May 26 DotNet\CSharp Demos\NunitWithMoqSolution\OrderManagementApp\bin\Debug\net8.0\OrderManagementApp.dll
+C:\Personal\Hexa May 26 DotNet\CSharp Demos\NunitWithMoqSolution\OrderManagementApp\bin\Debug\net8.0\OrderManagementApp.pdb
+C:\Personal\Hexa May 26 DotNet\CSharp Demos\NunitWithMoqSolution\OrderManagementApp\obj\Debug\net8.0\OrderManagementApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\Hexa May 26 DotNet\CSharp Demos\NunitWithMoqSolution\OrderManagementApp\obj\Debug\net8.0\OrderManagementApp.AssemblyInfoInputs.cache
+C:\Personal\Hexa May 26 DotNet\CSharp Demos\NunitWithMoqSolution\OrderManagementApp\obj\Debug\net8.0\OrderManagementApp.AssemblyInfo.cs
+C:\Personal\Hexa May 26 DotNet\CSharp Demos\NunitWithMoqSolution\OrderManagementApp\obj\Debug\net8.0\OrderManagementApp.csproj.CoreCompileInputs.cache
+C:\Personal\Hexa May 26 DotNet\CSharp Demos\NunitWithMoqSolution\OrderManagementApp\obj\Debug\net8.0\OrderManagementApp.sourcelink.json
+C:\Personal\Hexa May 26 DotNet\CSharp Demos\NunitWithMoqSolution\OrderManagementApp\obj\Debug\net8.0\OrderManagementApp.dll
+C:\Personal\Hexa May 26 DotNet\CSharp Demos\NunitWithMoqSolution\OrderManagementApp\obj\Debug\net8.0\refint\OrderManagementApp.dll
+C:\Personal\Hexa May 26 DotNet\CSharp Demos\NunitWithMoqSolution\OrderManagementApp\obj\Debug\net8.0\OrderManagementApp.pdb
+C:\Personal\Hexa May 26 DotNet\CSharp Demos\NunitWithMoqSolution\OrderManagementApp\obj\Debug\net8.0\OrderManagementApp.genruntimeconfig.cache
+C:\Personal\Hexa May 26 DotNet\CSharp Demos\NunitWithMoqSolution\OrderManagementApp\obj\Debug\net8.0\ref\OrderManagementApp.dll
