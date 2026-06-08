@@ -1,0 +1,334 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|c:\\personal\\hexa may 26 dotnet\\csharp demos\\hospitalappoinmentconsoleapp\\repositories\\implementations\\appointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|solutionrelative:repositories\\implementations\\appointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|c:\\personal\\hexa may 26 dotnet\\csharp demos\\hospitalappoinmentconsoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|c:\\personal\\hexa may 26 dotnet\\csharp demos\\hospitalappoinmentconsoleapp\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|solutionrelative:models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|c:\\personal\\hexa may 26 dotnet\\csharp demos\\hospitalappoinmentconsoleapp\\services\\implementations\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|solutionrelative:services\\implementations\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|c:\\personal\\hexa may 26 dotnet\\csharp demos\\hospitalappoinmentconsoleapp\\services\\interfaces\\iappointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|solutionrelative:services\\interfaces\\iappointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|c:\\personal\\hexa may 26 dotnet\\csharp demos\\hospitalappoinmentconsoleapp\\repositories\\implementations\\patientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|solutionrelative:repositories\\implementations\\patientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|c:\\personal\\hexa may 26 dotnet\\csharp demos\\hospitalappoinmentconsoleapp\\services\\implementations\\patientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|solutionrelative:services\\implementations\\patientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|c:\\personal\\hexa may 26 dotnet\\csharp demos\\hospitalappoinmentconsoleapp\\services\\interfaces\\ipatientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|solutionrelative:services\\interfaces\\ipatientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|c:\\personal\\hexa may 26 dotnet\\csharp demos\\hospitalappoinmentconsoleapp\\repositories\\implementations\\doctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|solutionrelative:repositories\\implementations\\doctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|c:\\personal\\hexa may 26 dotnet\\csharp demos\\hospitalappoinmentconsoleapp\\repositories\\interfaces\\iappointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|solutionrelative:repositories\\interfaces\\iappointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|c:\\personal\\hexa may 26 dotnet\\csharp demos\\hospitalappoinmentconsoleapp\\services\\implementations\\doctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|solutionrelative:services\\implementations\\doctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|c:\\personal\\hexa may 26 dotnet\\csharp demos\\hospitalappoinmentconsoleapp\\services\\interfaces\\idoctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|solutionrelative:services\\interfaces\\idoctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|c:\\personal\\hexa may 26 dotnet\\csharp demos\\hospitalappoinmentconsoleapp\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|solutionrelative:models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|c:\\personal\\hexa may 26 dotnet\\csharp demos\\hospitalappoinmentconsoleapp\\repositories\\interfaces\\ipatientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|solutionrelative:repositories\\interfaces\\ipatientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|c:\\personal\\hexa may 26 dotnet\\csharp demos\\hospitalappoinmentconsoleapp\\repositories\\interfaces\\idoctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|solutionrelative:repositories\\interfaces\\idoctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|c:\\personal\\hexa may 26 dotnet\\csharp demos\\hospitalappoinmentconsoleapp\\hospitalappoinmentconsoleapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|solutionrelative:hospitalappoinmentconsoleapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|c:\\personal\\hexa may 26 dotnet\\csharp demos\\hospitalappoinmentconsoleapp\\data\\hospitalappointmentdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|solutionrelative:data\\hospitalappointmentdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|c:\\personal\\hexa may 26 dotnet\\csharp demos\\hospitalappoinmentconsoleapp\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF630DF0-AD8C-466E-8073-F0280D5EAE10}|HospitalAppoinmentConsoleApp.csproj|solutionrelative:models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{f4e46f1e-cf83-40aa-b568-a627394bc994}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IAppointmentService.cs",
+              "DocumentMoniker": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\Services\\Interfaces\\IAppointmentService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\IAppointmentService.cs",
+              "ToolTip": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\Services\\Interfaces\\IAppointmentService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\IAppointmentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T05:05:01.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IPatientService.cs",
+              "DocumentMoniker": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\Services\\Interfaces\\IPatientService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\IPatientService.cs",
+              "ToolTip": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\Services\\Interfaces\\IPatientService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\IPatientService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T04:45:35.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAUwKkAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T04:26:59.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppointmentRepository.cs",
+              "DocumentMoniker": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\Repositories\\Implementations\\AppointmentRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementations\\AppointmentRepository.cs",
+              "ToolTip": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\Repositories\\Implementations\\AppointmentRepository.cs",
+              "RelativeToolTip": "Repositories\\Implementations\\AppointmentRepository.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAWwB4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T04:44:40.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppointmentService.cs",
+              "DocumentMoniker": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\Services\\Implementations\\AppointmentService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\AppointmentService.cs",
+              "ToolTip": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\Services\\Implementations\\AppointmentService.cs",
+              "RelativeToolTip": "Services\\Implementations\\AppointmentService.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAYwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T04:47:03.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\Models\\Appointment.cs",
+              "RelativeDocumentMoniker": "Models\\Appointment.cs",
+              "ToolTip": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\Models\\Appointment.cs",
+              "RelativeToolTip": "Models\\Appointment.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwA8AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T04:39:44.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PatientRepository.cs",
+              "DocumentMoniker": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\Repositories\\Implementations\\PatientRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementations\\PatientRepository.cs",
+              "ToolTip": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\Repositories\\Implementations\\PatientRepository.cs",
+              "RelativeToolTip": "Repositories\\Implementations\\PatientRepository.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAIAwwB8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T04:44:11.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DoctorRepository.cs",
+              "DocumentMoniker": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\Repositories\\Implementations\\DoctorRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementations\\DoctorRepository.cs",
+              "ToolTip": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\Repositories\\Implementations\\DoctorRepository.cs",
+              "RelativeToolTip": "Repositories\\Implementations\\DoctorRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBIAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T04:44:24.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PatientService.cs",
+              "DocumentMoniker": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\Services\\Implementations\\PatientService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\PatientService.cs",
+              "ToolTip": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\Services\\Implementations\\PatientService.cs",
+              "RelativeToolTip": "Services\\Implementations\\PatientService.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAmwC4AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T04:46:20.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IAppointmentRepository.cs",
+              "DocumentMoniker": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\Repositories\\Interfaces\\IAppointmentRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interfaces\\IAppointmentRepository.cs",
+              "ToolTip": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\Repositories\\Interfaces\\IAppointmentRepository.cs",
+              "RelativeToolTip": "Repositories\\Interfaces\\IAppointmentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T04:43:44.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DoctorService.cs",
+              "DocumentMoniker": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\Services\\Implementations\\DoctorService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\DoctorService.cs",
+              "ToolTip": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\Services\\Implementations\\DoctorService.cs",
+              "RelativeToolTip": "Services\\Implementations\\DoctorService.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAuwEwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T04:46:44.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IDoctorService.cs",
+              "DocumentMoniker": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\Services\\Interfaces\\IDoctorService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\IDoctorService.cs",
+              "ToolTip": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\Services\\Interfaces\\IDoctorService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\IDoctorService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T04:45:49.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\Models\\Patient.cs",
+              "RelativeDocumentMoniker": "Models\\Patient.cs",
+              "ToolTip": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\Models\\Patient.cs",
+              "RelativeToolTip": "Models\\Patient.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwA0AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T04:39:35.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IPatientRepository.cs",
+              "DocumentMoniker": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\Repositories\\Interfaces\\IPatientRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interfaces\\IPatientRepository.cs",
+              "ToolTip": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\Repositories\\Interfaces\\IPatientRepository.cs",
+              "RelativeToolTip": "Repositories\\Interfaces\\IPatientRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T04:42:46.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IDoctorRepository.cs",
+              "DocumentMoniker": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\Repositories\\Interfaces\\IDoctorRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interfaces\\IDoctorRepository.cs",
+              "ToolTip": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\Repositories\\Interfaces\\IDoctorRepository.cs",
+              "RelativeToolTip": "Repositories\\Interfaces\\IDoctorRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T04:43:25.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\Models\\Doctor.cs",
+              "RelativeDocumentMoniker": "Models\\Doctor.cs",
+              "ToolTip": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\Models\\Doctor.cs",
+              "RelativeToolTip": "Models\\Doctor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T04:38:56.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "HospitalAppointmentDbContext.cs",
+              "DocumentMoniker": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\Data\\HospitalAppointmentDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\HospitalAppointmentDbContext.cs",
+              "ToolTip": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\Data\\HospitalAppointmentDbContext.cs",
+              "RelativeToolTip": "Data\\HospitalAppointmentDbContext.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T04:38:46.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "HospitalAppoinmentConsoleApp",
+              "DocumentMoniker": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\HospitalAppoinmentConsoleApp.csproj",
+              "RelativeDocumentMoniker": "HospitalAppoinmentConsoleApp.csproj",
+              "ToolTip": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\HospitalAppoinmentConsoleApp\\HospitalAppoinmentConsoleApp.csproj",
+              "RelativeToolTip": "HospitalAppoinmentConsoleApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-08T04:28:58.932Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
