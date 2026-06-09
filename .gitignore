@@ -1,3 +1,36 @@
+# macOS
 .DS_Store
-**/obj/
+.AppleDouble
+.LSOverride
+
+# Build outputs
 **/bin/
+**/obj/
+**/out/
+
+# Visual Studio
+*.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Dotnet
+*.lock.json
+
+# User specific files
+*.user
+*.userprefs
+*.dbmdl
+
+# Backup files
+*~
+*.bak
+*.tmp
+
+# IDE
+.idea/
