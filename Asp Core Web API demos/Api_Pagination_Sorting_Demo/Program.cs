@@ -1,5 +1,6 @@
 
 using Api_Pagination_Sorting_Demo.Data;
+using Api_Pagination_Sorting_Demo.Middlewares;
 using Api_Pagination_Sorting_Demo.Repository.Implementations;
 using Api_Pagination_Sorting_Demo.Repository.Interfaces;
 using Api_Pagination_Sorting_Demo.Services.Implementations;
@@ -29,7 +30,8 @@ namespace Api_Pagination_Sorting_Demo
             builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
-
+            app.UseMiddleware<GlobalExceptionMiddleware>();
+            app.UseMiddleware<RequestResponseLoggingMiddleware>();
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
