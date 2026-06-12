@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Fdm8w8piCfQ=",
+  "dgSpecHash": "Q2BOqDUyc2A=",
   "success": true,
-  "projectFilePath": "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTest_practice/BankingApp.Tests/BankingApp.Tests.csproj",
+  "projectFilePath": "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_UnitTest/BankingApp.Tests/BankingApp.Tests.csproj",
   "expectedPackageFiles": [
     "/Users/williamgiftson/.nuget/packages/coverlet.collector/6.0.4/coverlet.collector.6.0.4.nupkg.sha512",
     "/Users/williamgiftson/.nuget/packages/microsoft.applicationinsights/2.22.0/microsoft.applicationinsights.2.22.0.nupkg.sha512",

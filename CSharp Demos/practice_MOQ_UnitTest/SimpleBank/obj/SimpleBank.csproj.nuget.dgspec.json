@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/SimpleBankApp/SimpleBank/SimpleBank.csproj": {}
+    "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_MOQ_UnitTest/SimpleBank/SimpleBank.csproj": {}
   },
   "projects": {
-    "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/SimpleBankApp/SimpleBank/SimpleBank.csproj": {
+    "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_MOQ_UnitTest/SimpleBank/SimpleBank.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/SimpleBankApp/SimpleBank/SimpleBank.csproj",
+        "projectUniqueName": "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_MOQ_UnitTest/SimpleBank/SimpleBank.csproj",
         "projectName": "SimpleBank",
-        "projectPath": "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/SimpleBankApp/SimpleBank/SimpleBank.csproj",
+        "projectPath": "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_MOQ_UnitTest/SimpleBank/SimpleBank.csproj",
         "packagesPath": "/Users/williamgiftson/.nuget/packages/",
-        "outputPath": "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/SimpleBankApp/SimpleBank/obj/",
+        "outputPath": "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_MOQ_UnitTest/SimpleBank/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/williamgiftson/.nuget/NuGet/NuGet.Config"

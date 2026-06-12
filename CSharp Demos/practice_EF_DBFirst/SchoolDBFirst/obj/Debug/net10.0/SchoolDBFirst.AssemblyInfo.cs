@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SchoolDBFirst")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+228e2859e94f667e0e27a7d7af03ccacda0f7fa8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45bf729510a917fb28bccb4c92d882c84c712b41")]
 [assembly: System.Reflection.AssemblyProductAttribute("SchoolDBFirst")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SchoolDBFirst")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Api_Pagination_Sorting_Demo.props" />
+</Project>

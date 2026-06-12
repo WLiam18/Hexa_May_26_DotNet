@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4KWdDQcR1EY=",
+  "dgSpecHash": "sL2ImdCqKVQ=",
   "success": true,
-  "projectFilePath": "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/LiskovSubstitution_practice/LiskovSubstitution_practice.csproj",
+  "projectFilePath": "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_LiskovSubstitution/LiskovSubstitution_practice.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

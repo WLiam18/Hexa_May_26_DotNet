@@ -1537,11 +1537,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTest_practice/BankingApp.Tests/BankingApp.Tests.csproj",
+      "projectUniqueName": "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_UnitTest/BankingApp.Tests/BankingApp.Tests.csproj",
       "projectName": "BankingApp.Tests",
-      "projectPath": "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTest_practice/BankingApp.Tests/BankingApp.Tests.csproj",
+      "projectPath": "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_UnitTest/BankingApp.Tests/BankingApp.Tests.csproj",
       "packagesPath": "/Users/williamgiftson/.nuget/packages/",
-      "outputPath": "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTest_practice/BankingApp.Tests/obj/",
+      "outputPath": "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_UnitTest/BankingApp.Tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/williamgiftson/.nuget/NuGet/NuGet.Config"
@@ -1556,8 +1556,8 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTest_practice/BankingApp/BankingApp.csproj": {
-              "projectPath": "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/UnitTest_practice/BankingApp/BankingApp.csproj"
+            "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_UnitTest/BankingApp/BankingApp.csproj": {
+              "projectPath": "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_UnitTest/BankingApp/BankingApp.csproj"
             }
           }
         }

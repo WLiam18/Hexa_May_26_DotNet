@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/LiskovSubstitution_practice/LiskovSubstitution_practice.csproj",
+      "projectUniqueName": "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_LiskovSubstitution/LiskovSubstitution_practice.csproj",
       "projectName": "LiskovSubstitution_practice",
-      "projectPath": "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/LiskovSubstitution_practice/LiskovSubstitution_practice.csproj",
+      "projectPath": "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_LiskovSubstitution/LiskovSubstitution_practice.csproj",
       "packagesPath": "/Users/williamgiftson/.nuget/packages/",
-      "outputPath": "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/LiskovSubstitution_practice/obj/",
+      "outputPath": "/Users/williamgiftson/Hexa_May_26_DotNet/CSharp Demos/practice_LiskovSubstitution/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/williamgiftson/.nuget/NuGet/NuGet.Config"
