@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\Partial_Sealed_Demo\\Partial_Sealed_Demo.csproj": {}
+    "C:\\Personal\\Hexa May 26 DotNet\\Git Notes\\Hexa_May_26_DotNet\\CSharp Demos\\Partial_Sealed_Demo\\Partial_Sealed_Demo.csproj": {}
   },
   "projects": {
-    "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\Partial_Sealed_Demo\\Partial_Sealed_Demo.csproj": {
+    "C:\\Personal\\Hexa May 26 DotNet\\Git Notes\\Hexa_May_26_DotNet\\CSharp Demos\\Partial_Sealed_Demo\\Partial_Sealed_Demo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\Partial_Sealed_Demo\\Partial_Sealed_Demo.csproj",
+        "projectUniqueName": "C:\\Personal\\Hexa May 26 DotNet\\Git Notes\\Hexa_May_26_DotNet\\CSharp Demos\\Partial_Sealed_Demo\\Partial_Sealed_Demo.csproj",
         "projectName": "Partial_Sealed_Demo",
-        "projectPath": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\Partial_Sealed_Demo\\Partial_Sealed_Demo.csproj",
+        "projectPath": "C:\\Personal\\Hexa May 26 DotNet\\Git Notes\\Hexa_May_26_DotNet\\CSharp Demos\\Partial_Sealed_Demo\\Partial_Sealed_Demo.csproj",
         "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "C:\\Personal\\Hexa May 26 DotNet\\CSharp Demos\\Partial_Sealed_Demo\\obj\\",
+        "outputPath": "C:\\Personal\\Hexa May 26 DotNet\\Git Notes\\Hexa_May_26_DotNet\\CSharp Demos\\Partial_Sealed_Demo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

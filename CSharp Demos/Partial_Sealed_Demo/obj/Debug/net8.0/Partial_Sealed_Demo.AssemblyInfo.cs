@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Partial_Sealed_Demo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9dac600d02cc5294749241a25fb8bcff19c61ea1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+395104b9707b12b0a44afe33ee93324797ecea0f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Partial_Sealed_Demo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Partial_Sealed_Demo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
