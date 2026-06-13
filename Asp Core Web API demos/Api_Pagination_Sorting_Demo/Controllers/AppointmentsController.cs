@@ -4,7 +4,7 @@ using Api_Pagination_Sorting_Demo.Services.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Drawing.Printing;
-
+using Microsoft.AspNetCore.Authorization;
 namespace Api_Pagination_Sorting_Demo.Controllers
 {
     [Route("api/[controller]")]
@@ -19,6 +19,7 @@ namespace Api_Pagination_Sorting_Demo.Controllers
             _appointmentService = appointmentService;
             _logger = logger;
         }
+        [Authorize(Roles="Admin,Doctor,Receptionist")]
         [HttpGet]
         public async Task<IActionResult> GetAppointments([FromQuery] AppointmentFilterRequestDto filter)
         {
@@ -39,5 +40,35 @@ namespace Api_Pagination_Sorting_Demo.Controllers
             _logger.LogInformation($"GetAppointments API successful. Returned {result.Data?.Data.Count ?? 0} records.");
             return Ok(result.Data);
         }
+        [Authorize(Roles="Admin")]
+        [HttpDelete("{id}")]
+        public IActionResult DeleteAppointment(int id)
+        {
+            return Ok(new
+            {
+                StatusCode = StatusCodes.Status200OK,
+                Message = $"Only admin can delete Appointment id {id}"
+            });
+        }
+
+        [Authorize(Roles="Admin,Receptionist")]
+        [HttpPost]
+        public IActionResult CreateAppointment()
+        {
+            return Ok(new
+            {
+                StatusCode = StatusCodes.Status200OK,
+                Message = "Only admin and receptionsit can create appointment."
+            });
+        }
+        [Authorize(Roles = "Admin,Doctor,Receptionist,Patient")]
+        [HttpGet("{id}")]
+        public IActionResult GetAppointmentById(int id) {
+            return Ok(new
+            {
+                StatusCode = StatusCodes.Status200OK,
+                Message = "Authenticated users can view appointment id : {id}."
+            });
+                }
     }
 }
