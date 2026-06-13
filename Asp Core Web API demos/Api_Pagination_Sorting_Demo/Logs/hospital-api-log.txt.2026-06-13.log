@@ -31,3 +31,259 @@ ORDER BY [t].[AppointmentDate]
 2026-06-13 11:10:55,358 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Services.Implementations.AppointmentService - AppointmentService completed pagination. Records returned: 4
 2026-06-13 11:10:55,361 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Controllers.AppointmentsController - GetAppointments API successful. Returned 4 records.
 2026-06-13 11:10:55,397 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Middlewares.RequestResponseLoggingMiddleware - HTTP Response completed : GET /api/Appointments TraceId: 200 Duration: 1814ms
+2026-06-13 12:35:20,683 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7014
+2026-06-13 12:35:20,691 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5162
+2026-06-13 12:35:20,693 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2026-06-13 12:35:20,694 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2026-06-13 12:35:20,694 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Personal\Hexa May 26 DotNet\Git Notes\Hexa_May_26_DotNet\Asp Core Web API demos\Api_Pagination_Sorting_Demo
+2026-06-13 12:35:22,206 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Middlewares.RequestResponseLoggingMiddleware - Handling request started: GET /swagger/index.html TraceId: 0HNM938GU7MSE:00000001
+2026-06-13 12:35:22,408 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Middlewares.RequestResponseLoggingMiddleware - HTTP Response completed : GET /swagger/index.html TraceId: 200 Duration: 202ms
+2026-06-13 12:35:22,818 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Middlewares.RequestResponseLoggingMiddleware - Handling request started: GET /swagger/v1/swagger.json TraceId: 0HNM938GU7MSE:00000007
+2026-06-13 12:35:23,064 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Middlewares.RequestResponseLoggingMiddleware - HTTP Response completed : GET /swagger/v1/swagger.json TraceId: 200 Duration: 248ms
+2026-06-13 14:56:31,214 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7014
+2026-06-13 14:56:31,222 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5162
+2026-06-13 14:56:31,223 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2026-06-13 14:56:31,224 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2026-06-13 14:56:31,224 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Personal\Hexa May 26 DotNet\Git Notes\Hexa_May_26_DotNet\Asp Core Web API demos\Api_Pagination_Sorting_Demo
+2026-06-13 14:56:35,353 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Middlewares.RequestResponseLoggingMiddleware - Handling request started: GET /swagger/index.html TraceId: 0HNM95NDA45M7:00000001
+2026-06-13 14:56:35,532 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Middlewares.RequestResponseLoggingMiddleware - HTTP Response completed : GET /swagger/index.html TraceId: 200 Duration: 179ms
+2026-06-13 14:56:35,816 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Middlewares.RequestResponseLoggingMiddleware - Handling request started: GET /swagger/v1/swagger.json TraceId: 0HNM95NDA45M7:00000007
+2026-06-13 14:56:36,021 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Middlewares.RequestResponseLoggingMiddleware - HTTP Response completed : GET /swagger/v1/swagger.json TraceId: 200 Duration: 205ms
+2026-06-13 14:57:35,014 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Middlewares.RequestResponseLoggingMiddleware - Handling request started: POST /api/Auth/login TraceId: 0HNM95NDA45M7:00000009
+2026-06-13 14:58:08,073 [.NET TP Worker] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (109ms) [Parameters=[@__userName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[UserId], [t].[CreatedDate], [t].[Email], [t].[FullName], [t].[IsActive], [t].[PasswordHash], [t].[UserName], [t0].[UserRoleId], [t0].[RoleId], [t0].[UserId], [t0].[RoleId0], [t0].[RoleName]
+FROM (
+    SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FullName], [u].[IsActive], [u].[PasswordHash], [u].[UserName]
+    FROM [Users] AS [u]
+    WHERE [u].[UserName] = @__userName_0
+) AS [t]
+LEFT JOIN (
+    SELECT [u0].[UserRoleId], [u0].[RoleId], [u0].[UserId], [r].[RoleId] AS [RoleId0], [r].[RoleName]
+    FROM [UserRoles] AS [u0]
+    INNER JOIN [Roles] AS [r] ON [u0].[RoleId] = [r].[RoleId]
+) AS [t0] ON [t].[UserId] = [t0].[UserId]
+ORDER BY [t].[UserId], [t0].[UserRoleId]
+2026-06-13 14:59:20,121 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Middlewares.RequestResponseLoggingMiddleware - Handling request started: POST /api/Auth/login TraceId: 0HNM95NDA45M7:0000000B
+2026-06-13 14:59:21,712 [.NET TP Worker] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (21ms) [Parameters=[@__userName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[UserId], [t].[CreatedDate], [t].[Email], [t].[FullName], [t].[IsActive], [t].[PasswordHash], [t].[UserName], [t0].[UserRoleId], [t0].[RoleId], [t0].[UserId], [t0].[RoleId0], [t0].[RoleName]
+FROM (
+    SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FullName], [u].[IsActive], [u].[PasswordHash], [u].[UserName]
+    FROM [Users] AS [u]
+    WHERE [u].[UserName] = @__userName_0
+) AS [t]
+LEFT JOIN (
+    SELECT [u0].[UserRoleId], [u0].[RoleId], [u0].[UserId], [r].[RoleId] AS [RoleId0], [r].[RoleName]
+    FROM [UserRoles] AS [u0]
+    INNER JOIN [Roles] AS [r] ON [u0].[RoleId] = [r].[RoleId]
+) AS [t0] ON [t].[UserId] = [t0].[UserId]
+ORDER BY [t].[UserId], [t0].[UserRoleId]
+2026-06-13 14:59:52,520 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7014
+2026-06-13 14:59:52,526 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5162
+2026-06-13 14:59:52,528 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2026-06-13 14:59:52,528 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2026-06-13 14:59:52,528 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Personal\Hexa May 26 DotNet\Git Notes\Hexa_May_26_DotNet\Asp Core Web API demos\Api_Pagination_Sorting_Demo
+2026-06-13 14:59:53,025 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Middlewares.RequestResponseLoggingMiddleware - Handling request started: GET /swagger/index.html TraceId: 0HNM95P9AJE4M:00000001
+2026-06-13 14:59:53,128 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Middlewares.RequestResponseLoggingMiddleware - HTTP Response completed : GET /swagger/index.html TraceId: 200 Duration: 103ms
+2026-06-13 14:59:53,259 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Middlewares.RequestResponseLoggingMiddleware - Handling request started: GET /swagger/v1/swagger.json TraceId: 0HNM95P9AJE4M:00000007
+2026-06-13 14:59:53,394 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Middlewares.RequestResponseLoggingMiddleware - HTTP Response completed : GET /swagger/v1/swagger.json TraceId: 200 Duration: 134ms
+2026-06-13 15:00:07,953 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Middlewares.RequestResponseLoggingMiddleware - Handling request started: POST /api/Auth/login TraceId: 0HNM95P9AJE4M:00000009
+2026-06-13 15:00:09,769 [.NET TP Worker] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (157ms) [Parameters=[@__userName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[UserId], [t].[CreatedDate], [t].[Email], [t].[FullName], [t].[IsActive], [t].[PasswordHash], [t].[UserName], [t0].[UserRoleId], [t0].[RoleId], [t0].[UserId], [t0].[RoleId0], [t0].[RoleName]
+FROM (
+    SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FullName], [u].[IsActive], [u].[PasswordHash], [u].[UserName]
+    FROM [Users] AS [u]
+    WHERE [u].[UserName] = @__userName_0
+) AS [t]
+LEFT JOIN (
+    SELECT [u0].[UserRoleId], [u0].[RoleId], [u0].[UserId], [r].[RoleId] AS [RoleId0], [r].[RoleName]
+    FROM [UserRoles] AS [u0]
+    INNER JOIN [Roles] AS [r] ON [u0].[RoleId] = [r].[RoleId]
+) AS [t0] ON [t].[UserId] = [t0].[UserId]
+ORDER BY [t].[UserId], [t0].[UserRoleId]
+2026-06-13 15:00:28,507 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Middlewares.RequestResponseLoggingMiddleware - Handling request started: POST /api/Auth/login TraceId: 0HNM95P9AJE4M:0000000B
+2026-06-13 15:00:28,545 [.NET TP Worker] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__userName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[UserId], [t].[CreatedDate], [t].[Email], [t].[FullName], [t].[IsActive], [t].[PasswordHash], [t].[UserName], [t0].[UserRoleId], [t0].[RoleId], [t0].[UserId], [t0].[RoleId0], [t0].[RoleName]
+FROM (
+    SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FullName], [u].[IsActive], [u].[PasswordHash], [u].[UserName]
+    FROM [Users] AS [u]
+    WHERE [u].[UserName] = @__userName_0
+) AS [t]
+LEFT JOIN (
+    SELECT [u0].[UserRoleId], [u0].[RoleId], [u0].[UserId], [r].[RoleId] AS [RoleId0], [r].[RoleName]
+    FROM [UserRoles] AS [u0]
+    INNER JOIN [Roles] AS [r] ON [u0].[RoleId] = [r].[RoleId]
+) AS [t0] ON [t].[UserId] = [t0].[UserId]
+ORDER BY [t].[UserId], [t0].[UserRoleId]
+2026-06-13 15:01:01,465 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Middlewares.RequestResponseLoggingMiddleware - Handling request started: POST /api/Auth/login TraceId: 0HNM95P9AJE4M:0000000D
+2026-06-13 15:01:01,540 [.NET TP Worker] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (15ms) [Parameters=[@__userName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[UserId], [t].[CreatedDate], [t].[Email], [t].[FullName], [t].[IsActive], [t].[PasswordHash], [t].[UserName], [t0].[UserRoleId], [t0].[RoleId], [t0].[UserId], [t0].[RoleId0], [t0].[RoleName]
+FROM (
+    SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FullName], [u].[IsActive], [u].[PasswordHash], [u].[UserName]
+    FROM [Users] AS [u]
+    WHERE [u].[UserName] = @__userName_0
+) AS [t]
+LEFT JOIN (
+    SELECT [u0].[UserRoleId], [u0].[RoleId], [u0].[UserId], [r].[RoleId] AS [RoleId0], [r].[RoleName]
+    FROM [UserRoles] AS [u0]
+    INNER JOIN [Roles] AS [r] ON [u0].[RoleId] = [r].[RoleId]
+) AS [t0] ON [t].[UserId] = [t0].[UserId]
+ORDER BY [t].[UserId], [t0].[UserRoleId]
+2026-06-13 15:01:25,428 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7014
+2026-06-13 15:01:25,436 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5162
+2026-06-13 15:01:25,439 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2026-06-13 15:01:25,439 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2026-06-13 15:01:25,439 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Personal\Hexa May 26 DotNet\Git Notes\Hexa_May_26_DotNet\Asp Core Web API demos\Api_Pagination_Sorting_Demo
+2026-06-13 15:01:30,053 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Middlewares.RequestResponseLoggingMiddleware - Handling request started: GET /swagger/index.html TraceId: 0HNM95Q52LLUS:00000001
+2026-06-13 15:01:30,154 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Middlewares.RequestResponseLoggingMiddleware - HTTP Response completed : GET /swagger/index.html TraceId: 200 Duration: 100ms
+2026-06-13 15:01:30,278 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Middlewares.RequestResponseLoggingMiddleware - Handling request started: GET /swagger/v1/swagger.json TraceId: 0HNM95Q52LLUS:00000007
+2026-06-13 15:01:30,393 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Middlewares.RequestResponseLoggingMiddleware - HTTP Response completed : GET /swagger/v1/swagger.json TraceId: 200 Duration: 114ms
+2026-06-13 15:01:46,528 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Middlewares.RequestResponseLoggingMiddleware - Handling request started: POST /api/Auth/login TraceId: 0HNM95Q52LLUS:00000009
+2026-06-13 15:01:48,311 [.NET TP Worker] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (93ms) [Parameters=[@__userName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[UserId], [t].[CreatedDate], [t].[Email], [t].[FullName], [t].[IsActive], [t].[PasswordHash], [t].[UserName], [t0].[UserRoleId], [t0].[RoleId], [t0].[UserId], [t0].[RoleId0], [t0].[RoleName]
+FROM (
+    SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FullName], [u].[IsActive], [u].[PasswordHash], [u].[UserName]
+    FROM [Users] AS [u]
+    WHERE [u].[UserName] = @__userName_0
+) AS [t]
+LEFT JOIN (
+    SELECT [u0].[UserRoleId], [u0].[RoleId], [u0].[UserId], [r].[RoleId] AS [RoleId0], [r].[RoleName]
+    FROM [UserRoles] AS [u0]
+    INNER JOIN [Roles] AS [r] ON [u0].[RoleId] = [r].[RoleId]
+) AS [t0] ON [t].[UserId] = [t0].[UserId]
+ORDER BY [t].[UserId], [t0].[UserRoleId]
+2026-06-13 15:05:03,293 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7014
+2026-06-13 15:05:03,300 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5162
+2026-06-13 15:05:03,302 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2026-06-13 15:05:03,302 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2026-06-13 15:05:03,302 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Personal\Hexa May 26 DotNet\Git Notes\Hexa_May_26_DotNet\Asp Core Web API demos\Api_Pagination_Sorting_Demo
+2026-06-13 15:05:08,219 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Middlewares.RequestResponseLoggingMiddleware - Handling request started: GET /swagger/index.html TraceId: 0HNM95S62131J:00000001
+2026-06-13 15:05:08,416 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Middlewares.RequestResponseLoggingMiddleware - HTTP Response completed : GET /swagger/index.html TraceId: 200 Duration: 197ms
+2026-06-13 15:05:08,559 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Middlewares.RequestResponseLoggingMiddleware - Handling request started: GET /swagger/v1/swagger.json TraceId: 0HNM95S62131J:00000007
+2026-06-13 15:05:08,711 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Middlewares.RequestResponseLoggingMiddleware - HTTP Response completed : GET /swagger/v1/swagger.json TraceId: 200 Duration: 151ms
+2026-06-13 15:05:32,924 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Middlewares.RequestResponseLoggingMiddleware - Handling request started: POST /api/Auth/login TraceId: 0HNM95S62131J:00000009
+2026-06-13 15:05:45,149 [.NET TP Worker] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (101ms) [Parameters=[@__userName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[UserId], [t].[CreatedDate], [t].[Email], [t].[FullName], [t].[IsActive], [t].[PasswordHash], [t].[UserName], [t0].[UserRoleId], [t0].[RoleId], [t0].[UserId], [t0].[RoleId0], [t0].[RoleName]
+FROM (
+    SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FullName], [u].[IsActive], [u].[PasswordHash], [u].[UserName]
+    FROM [Users] AS [u]
+    WHERE [u].[UserName] = @__userName_0
+) AS [t]
+LEFT JOIN (
+    SELECT [u0].[UserRoleId], [u0].[RoleId], [u0].[UserId], [r].[RoleId] AS [RoleId0], [r].[RoleName]
+    FROM [UserRoles] AS [u0]
+    INNER JOIN [Roles] AS [r] ON [u0].[RoleId] = [r].[RoleId]
+) AS [t0] ON [t].[UserId] = [t0].[UserId]
+ORDER BY [t].[UserId], [t0].[UserRoleId]
+2026-06-13 15:10:42,081 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7014
+2026-06-13 15:10:42,091 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5162
+2026-06-13 15:10:42,094 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2026-06-13 15:10:42,095 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2026-06-13 15:10:42,095 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Personal\Hexa May 26 DotNet\Git Notes\Hexa_May_26_DotNet\Asp Core Web API demos\Api_Pagination_Sorting_Demo
+2026-06-13 15:11:25,165 [.NET TP Worker] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (70ms) [Parameters=[@__userName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[UserId], [t].[CreatedDate], [t].[Email], [t].[FullName], [t].[IsActive], [t].[PasswordHash], [t].[UserName], [t0].[UserRoleId], [t0].[RoleId], [t0].[UserId], [t0].[RoleId0], [t0].[RoleName]
+FROM (
+    SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FullName], [u].[IsActive], [u].[PasswordHash], [u].[UserName]
+    FROM [Users] AS [u]
+    WHERE [u].[UserName] = @__userName_0
+) AS [t]
+LEFT JOIN (
+    SELECT [u0].[UserRoleId], [u0].[RoleId], [u0].[UserId], [r].[RoleId] AS [RoleId0], [r].[RoleName]
+    FROM [UserRoles] AS [u0]
+    INNER JOIN [Roles] AS [r] ON [u0].[RoleId] = [r].[RoleId]
+) AS [t0] ON [t].[UserId] = [t0].[UserId]
+ORDER BY [t].[UserId], [t0].[UserRoleId]
+2026-06-13 15:12:26,256 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7014
+2026-06-13 15:12:26,263 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5162
+2026-06-13 15:12:26,265 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2026-06-13 15:12:26,265 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2026-06-13 15:12:26,265 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Personal\Hexa May 26 DotNet\Git Notes\Hexa_May_26_DotNet\Asp Core Web API demos\Api_Pagination_Sorting_Demo
+2026-06-13 15:12:41,027 [.NET TP Worker] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (102ms) [Parameters=[@__userName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[UserId], [t].[CreatedDate], [t].[Email], [t].[FullName], [t].[IsActive], [t].[PasswordHash], [t].[UserName], [t0].[UserRoleId], [t0].[RoleId], [t0].[UserId], [t0].[RoleId0], [t0].[RoleName]
+FROM (
+    SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FullName], [u].[IsActive], [u].[PasswordHash], [u].[UserName]
+    FROM [Users] AS [u]
+    WHERE [u].[UserName] = @__userName_0
+) AS [t]
+LEFT JOIN (
+    SELECT [u0].[UserRoleId], [u0].[RoleId], [u0].[UserId], [r].[RoleId] AS [RoleId0], [r].[RoleName]
+    FROM [UserRoles] AS [u0]
+    INNER JOIN [Roles] AS [r] ON [u0].[RoleId] = [r].[RoleId]
+) AS [t0] ON [t].[UserId] = [t0].[UserId]
+ORDER BY [t].[UserId], [t0].[UserRoleId]
+2026-06-13 15:12:59,896 [.NET TP Worker] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (20ms) [Parameters=[@__userName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[UserId], [t].[CreatedDate], [t].[Email], [t].[FullName], [t].[IsActive], [t].[PasswordHash], [t].[UserName], [t0].[UserRoleId], [t0].[RoleId], [t0].[UserId], [t0].[RoleId0], [t0].[RoleName]
+FROM (
+    SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FullName], [u].[IsActive], [u].[PasswordHash], [u].[UserName]
+    FROM [Users] AS [u]
+    WHERE [u].[UserName] = @__userName_0
+) AS [t]
+LEFT JOIN (
+    SELECT [u0].[UserRoleId], [u0].[RoleId], [u0].[UserId], [r].[RoleId] AS [RoleId0], [r].[RoleName]
+    FROM [UserRoles] AS [u0]
+    INNER JOIN [Roles] AS [r] ON [u0].[RoleId] = [r].[RoleId]
+) AS [t0] ON [t].[UserId] = [t0].[UserId]
+ORDER BY [t].[UserId], [t0].[UserRoleId]
+2026-06-13 15:15:47,624 [.NET TP Worker] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (21ms) [Parameters=[@__userName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[UserId], [t].[CreatedDate], [t].[Email], [t].[FullName], [t].[IsActive], [t].[PasswordHash], [t].[UserName], [t0].[UserRoleId], [t0].[RoleId], [t0].[UserId], [t0].[RoleId0], [t0].[RoleName]
+FROM (
+    SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FullName], [u].[IsActive], [u].[PasswordHash], [u].[UserName]
+    FROM [Users] AS [u]
+    WHERE [u].[UserName] = @__userName_0
+) AS [t]
+LEFT JOIN (
+    SELECT [u0].[UserRoleId], [u0].[RoleId], [u0].[UserId], [r].[RoleId] AS [RoleId0], [r].[RoleName]
+    FROM [UserRoles] AS [u0]
+    INNER JOIN [Roles] AS [r] ON [u0].[RoleId] = [r].[RoleId]
+) AS [t0] ON [t].[UserId] = [t0].[UserId]
+ORDER BY [t].[UserId], [t0].[UserRoleId]
+2026-06-13 15:18:33,352 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7014
+2026-06-13 15:18:33,363 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5162
+2026-06-13 15:18:33,366 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2026-06-13 15:18:33,367 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2026-06-13 15:18:33,367 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Personal\Hexa May 26 DotNet\Git Notes\Hexa_May_26_DotNet\Asp Core Web API demos\Api_Pagination_Sorting_Demo
+2026-06-13 15:19:30,973 [.NET TP Worker] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (69ms) [Parameters=[@__userName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[UserId], [t].[CreatedDate], [t].[Email], [t].[FullName], [t].[IsActive], [t].[PasswordHash], [t].[UserName], [t0].[UserRoleId], [t0].[RoleId], [t0].[UserId], [t0].[RoleId0], [t0].[RoleName]
+FROM (
+    SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FullName], [u].[IsActive], [u].[PasswordHash], [u].[UserName]
+    FROM [Users] AS [u]
+    WHERE [u].[UserName] = @__userName_0
+) AS [t]
+LEFT JOIN (
+    SELECT [u0].[UserRoleId], [u0].[RoleId], [u0].[UserId], [r].[RoleId] AS [RoleId0], [r].[RoleName]
+    FROM [UserRoles] AS [u0]
+    INNER JOIN [Roles] AS [r] ON [u0].[RoleId] = [r].[RoleId]
+) AS [t0] ON [t].[UserId] = [t0].[UserId]
+ORDER BY [t].[UserId], [t0].[UserRoleId]
+2026-06-13 15:20:24,480 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Controllers.AppointmentsController - GetAppointments API called with PageNumber: 1, PageSize: 10, DoctorId: , PatientId: , Status: 
+2026-06-13 15:20:24,482 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Services.Implementations.AppointmentService - AppointmentService started Pagination operation
+2026-06-13 15:20:24,484 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Repository.Implementations.AppointmentRepository - Preparing appointment query with Doctor and Patient includes.
+2026-06-13 15:20:24,549 [.NET TP Worker] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Appointments] AS [a]
+2026-06-13 15:20:24,552 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Services.Implementations.AppointmentService - Total appointments before pagination: 21
+2026-06-13 15:20:24,599 [.NET TP Worker] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (27ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[AppointmentId], [t].[AppointmentDate], [t].[AppointmentStatus], [t].[AppointmentTime], [t].[CreatedDate], [t].[DoctorId], [t].[PatientId], [t].[Symptoms], [d].[DoctorId], [d].[ConsultationFee], [d].[DoctorName], [d].[IsAvailable], [d].[PhoneNumber], [d].[Specialization], [p].[PatientId], [p].[Age], [p].[City], [p].[Email], [p].[Gender], [p].[PatientName], [p].[PhoneNumber]
+FROM (
+    SELECT [a].[AppointmentId], [a].[AppointmentDate], [a].[AppointmentStatus], [a].[AppointmentTime], [a].[CreatedDate], [a].[DoctorId], [a].[PatientId], [a].[Symptoms]
+    FROM [Appointments] AS [a]
+    ORDER BY [a].[AppointmentDate]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [Doctors] AS [d] ON [t].[DoctorId] = [d].[DoctorId]
+INNER JOIN [Patients] AS [p] ON [t].[PatientId] = [p].[PatientId]
+ORDER BY [t].[AppointmentDate]
+2026-06-13 15:20:24,651 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Services.Implementations.AppointmentService - AppointmentService completed pagination. Records returned: 10
+2026-06-13 15:20:24,655 [.NET TP Worker] INFO  Api_Pagination_Sorting_Demo.Controllers.AppointmentsController - GetAppointments API successful. Returned 10 records.
+2026-06-13 15:21:17,462 [.NET TP Worker] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (15ms) [Parameters=[@__userName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[UserId], [t].[CreatedDate], [t].[Email], [t].[FullName], [t].[IsActive], [t].[PasswordHash], [t].[UserName], [t0].[UserRoleId], [t0].[RoleId], [t0].[UserId], [t0].[RoleId0], [t0].[RoleName]
+FROM (
+    SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FullName], [u].[IsActive], [u].[PasswordHash], [u].[UserName]
+    FROM [Users] AS [u]
+    WHERE [u].[UserName] = @__userName_0
+) AS [t]
+LEFT JOIN (
+    SELECT [u0].[UserRoleId], [u0].[RoleId], [u0].[UserId], [r].[RoleId] AS [RoleId0], [r].[RoleName]
+    FROM [UserRoles] AS [u0]
+    INNER JOIN [Roles] AS [r] ON [u0].[RoleId] = [r].[RoleId]
+) AS [t0] ON [t].[UserId] = [t0].[UserId]
+ORDER BY [t].[UserId], [t0].[UserRoleId]
