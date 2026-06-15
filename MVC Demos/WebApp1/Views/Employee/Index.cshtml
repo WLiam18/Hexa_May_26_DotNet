@@ -1,7 +1,10 @@
 ﻿@model List<WebApp1.Models.Employee>
 
     <h2> Employee List</h2>
-
+    <p>
+        <a asp-controller="Employee" asp-action="Create"
+        class="btn btn-success">Create New Employee</a>
+    </p>
     <table border="1" cellpadding="10">
         <thead>
         <tr>
@@ -10,6 +13,7 @@
             <th>Department</th>
             <th>Salary</th>
             <th>City</th>
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
@@ -21,6 +25,14 @@
                 <td>@employee.Department</td>
                 <td>@employee.Salary</td>
                 <td>@employee.City</td>
+                <td>
+                    <a asp-controller="Employee" asp-action="Details"
+                    asp-route-id="@employee.EmployeeId">Details</a>
+                     <a asp-controller="Employee" asp-action="Edit"
+                    asp-route-id="@employee.EmployeeId">Edit</a>
+                    <a asp-controller="Employee" asp-action="Delete"
+                       asp-route-id="@employee.EmployeeId">Delete</a>
+                </td>
             </tr>
         }
     </tbody>
