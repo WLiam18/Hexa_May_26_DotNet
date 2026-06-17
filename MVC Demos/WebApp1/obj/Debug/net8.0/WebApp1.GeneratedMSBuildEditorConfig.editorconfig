@@ -1,91 +1,87 @@
 is_global = true
 build_property.TargetFramework = net8.0
-build_property.TargetFramework = net8.0
-build_property.TargetPlatformMinVersion = 
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v8.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
-build_property.UsingMicrosoftNETSdkWeb = true
-build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
-build_property.InvariantGlobalization = 
-build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
-build_property.EnforceExtendedAnalyzerRules = 
-build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebApp1
 build_property.RootNamespace = WebApp1
-build_property.ProjectDir = C:\Personal\Hexa May 26 DotNet\Git Notes\Hexa_May_26_DotNet\MVC Demos\WebApp1\
+build_property.ProjectDir = /Users/williamgiftson/Hexa_May_26_DotNet/MVC Demos/WebApp1/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Personal\Hexa May 26 DotNet\Git Notes\Hexa_May_26_DotNet\MVC Demos\WebApp1
+build_property.MSBuildProjectDirectory = /Users/williamgiftson/Hexa_May_26_DotNet/MVC Demos/WebApp1
 build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
 
-[C:/Personal/Hexa May 26 DotNet/Git Notes/Hexa_May_26_DotNet/MVC Demos/WebApp1/Views/Employee/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcQ3JlYXRlLmNzaHRtbA==
+[/Users/williamgiftson/Hexa_May_26_DotNet/MVC Demos/WebApp1/Views/Employee/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWUvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Personal/Hexa May 26 DotNet/Git Notes/Hexa_May_26_DotNet/MVC Demos/WebApp1/Views/Employee/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRGVsZXRlLmNzaHRtbA==
+[/Users/williamgiftson/Hexa_May_26_DotNet/MVC Demos/WebApp1/Views/Employee/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWUvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Personal/Hexa May 26 DotNet/Git Notes/Hexa_May_26_DotNet/MVC Demos/WebApp1/Views/Employee/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRGV0YWlscy5jc2h0bWw=
+[/Users/williamgiftson/Hexa_May_26_DotNet/MVC Demos/WebApp1/Views/Employee/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWUvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Personal/Hexa May 26 DotNet/Git Notes/Hexa_May_26_DotNet/MVC Demos/WebApp1/Views/Employee/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRWRpdC5jc2h0bWw=
+[/Users/williamgiftson/Hexa_May_26_DotNet/MVC Demos/WebApp1/Views/Employee/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWUvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Personal/Hexa May 26 DotNet/Git Notes/Hexa_May_26_DotNet/MVC Demos/WebApp1/Views/Employee/EmployeeSuccess.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRW1wbG95ZWVTdWNjZXNzLmNzaHRtbA==
+[/Users/williamgiftson/Hexa_May_26_DotNet/MVC Demos/WebApp1/Views/Employee/EmployeeSuccess.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWUvRW1wbG95ZWVTdWNjZXNzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Personal/Hexa May 26 DotNet/Git Notes/Hexa_May_26_DotNet/MVC Demos/WebApp1/Views/Employee/GetEmployeeJson.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcR2V0RW1wbG95ZWVKc29uLmNzaHRtbA==
+[/Users/williamgiftson/Hexa_May_26_DotNet/MVC Demos/WebApp1/Views/Employee/GetEmployeeJson.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWUvR2V0RW1wbG95ZWVKc29uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Personal/Hexa May 26 DotNet/Git Notes/Hexa_May_26_DotNet/MVC Demos/WebApp1/Views/Employee/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcSW5kZXguY3NodG1s
+[/Users/williamgiftson/Hexa_May_26_DotNet/MVC Demos/WebApp1/Views/Employee/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWUvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Personal/Hexa May 26 DotNet/Git Notes/Hexa_May_26_DotNet/MVC Demos/WebApp1/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[/Users/williamgiftson/Hexa_May_26_DotNet/MVC Demos/WebApp1/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Personal/Hexa May 26 DotNet/Git Notes/Hexa_May_26_DotNet/MVC Demos/WebApp1/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[/Users/williamgiftson/Hexa_May_26_DotNet/MVC Demos/WebApp1/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Personal/Hexa May 26 DotNet/Git Notes/Hexa_May_26_DotNet/MVC Demos/WebApp1/Views/Home/ViewBagExample.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWaWV3QmFnRXhhbXBsZS5jc2h0bWw=
+[/Users/williamgiftson/Hexa_May_26_DotNet/MVC Demos/WebApp1/Views/Home/ViewBagExample.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9WaWV3QmFnRXhhbXBsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Personal/Hexa May 26 DotNet/Git Notes/Hexa_May_26_DotNet/MVC Demos/WebApp1/Views/Home/ViewDataExample.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWaWV3RGF0YUV4YW1wbGUuY3NodG1s
+[/Users/williamgiftson/Hexa_May_26_DotNet/MVC Demos/WebApp1/Views/Home/ViewDataExample.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9WaWV3RGF0YUV4YW1wbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Personal/Hexa May 26 DotNet/Git Notes/Hexa_May_26_DotNet/MVC Demos/WebApp1/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+[/Users/williamgiftson/Hexa_May_26_DotNet/MVC Demos/WebApp1/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Personal/Hexa May 26 DotNet/Git Notes/Hexa_May_26_DotNet/MVC Demos/WebApp1/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[/Users/williamgiftson/Hexa_May_26_DotNet/MVC Demos/WebApp1/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Personal/Hexa May 26 DotNet/Git Notes/Hexa_May_26_DotNet/MVC Demos/WebApp1/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/Users/williamgiftson/Hexa_May_26_DotNet/MVC Demos/WebApp1/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Personal/Hexa May 26 DotNet/Git Notes/Hexa_May_26_DotNet/MVC Demos/WebApp1/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+[/Users/williamgiftson/Hexa_May_26_DotNet/MVC Demos/WebApp1/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Personal/Hexa May 26 DotNet/Git Notes/Hexa_May_26_DotNet/MVC Demos/WebApp1/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-pu61qw1s5v
+[/Users/williamgiftson/Hexa_May_26_DotNet/MVC Demos/WebApp1/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-sag9vnd9bm
