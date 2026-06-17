@@ -1,0 +1,36 @@
+﻿@model HospitalAppointmentMvc.Dtos.AppointmentUpdateStatusDto
+
+@{
+    ViewData["Title"] = "Update Appointment Status";
+}
+
+<h2>Update Appointment Status</h2>
+
+<form asp-action="UpdateStatus"
+      asp-route-id="@ViewBag.AppointmentId"
+      method="post">
+
+    @Html.AntiForgeryToken()
+
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="form-group">
+        <label>Appointment Status</label>
+        <select asp-for="AppointmentStatus"
+                asp-items="ViewBag.Statuses"
+                class="form-control">
+            <option value="">-- Select Status --</option>
+        </select>
+        <span asp-validation-for="AppointmentStatus" class="text-danger"></span>
+    </div>
+
+    <br />
+
+    <button type="submit" class="btn btn-primary">Update</button>
+
+    <a asp-action="Index" class="btn btn-secondary">Back</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
