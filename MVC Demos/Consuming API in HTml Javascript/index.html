@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Hospital Appointment HTML Client</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Hospital Appointment System</h1>
+
+    <!-- Login Section -->
+    <section id="loginSection">
+      <h2>Login</h2>
+
+      <div>
+        <label>Username</label>
+        <input type="text" id="username" placeholder="Enter username" />
+      </div>
+
+      <div>
+        <label>Password</label>
+        <input type="password" id="password" placeholder="Enter password" />
+      </div>
+
+      <button onclick="login()">Login</button>
+
+      <p id="loginMessage"></p>
+    </section>
+
+    <!-- Main Section -->
+    <section id="mainSection" style="display: none">
+      <div class="top-bar">
+        <h2>Appointments</h2>
+        <button onclick="logout()">Logout</button>
+      </div>
+
+      <p id="message"></p>
+
+      <!-- Create Appointment Section -->
+      <div class="card">
+        <h3>Create Appointment</h3>
+
+        <div>
+          <label>Doctor</label>
+          <select id="doctorId">
+            <option value="">-- Select Doctor --</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Patient</label>
+          <select id="patientId">
+            <option value="">-- Select Patient --</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Appointment Date</label>
+          <input type="date" id="appointmentDate" />
+        </div>
+
+        <div>
+          <label>Appointment Time</label>
+          <input type="time" id="appointmentTime" />
+        </div>
+
+        <div>
+          <label>Reason</label>
+          <textarea id="reason" placeholder="Enter reason"></textarea>
+        </div>
+
+        <button onclick="createAppointment()">Create Appointment</button>
+      </div>
+
+      <!-- Appointment List -->
+      <div class="card">
+        <h3>Appointment List</h3>
+
+        <button onclick="loadAppointments()">Refresh</button>
+
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Doctor</th>
+              <th>Patient</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Status</th>
+              <th>Reason</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+
+          <tbody id="appointmentTableBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
