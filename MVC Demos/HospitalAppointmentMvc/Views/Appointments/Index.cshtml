@@ -1,0 +1,70 @@
+﻿@model List<HospitalAppointmentMvc.Dtos.AppointmentResponseDto>
+
+@{
+    ViewData["Title"] = "Appointments";
+}
+
+<h2>Appointments</h2>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create Appointment</a>
+    <a asp-controller="Auth" asp-action="Logout" class="btn btn-secondary">Logout</a>
+</p>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Appointment ID</th>
+            <th>Doctor</th>
+            <th>Patient</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Status</th>
+            <th>Reason</th>
+            <th>Created At</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var appointment in Model)
+        {
+            <tr>
+                <td>@appointment.AppointmentId</td>
+                <td>@appointment.DoctorName</td>
+                <td>@appointment.PatientName</td>
+                <td>@appointment.AppointmentDate</td>
+                <td>@appointment.AppointmentTime</td>
+                <td>@appointment.AppointmentStatus</td>
+                <td>@appointment.Reason</td>
+                <td>@appointment.CreatedAt</td>
+                <td>
+                    <a asp-action="Details"
+                       asp-route-id="@appointment.AppointmentId"
+                       class="btn btn-info btn-sm">
+                        Details
+                    </a>
+
+                    <a asp-action="UpdateStatus"
+                       asp-route-id="@appointment.AppointmentId"
+                       class="btn btn-warning btn-sm">
+                        Update Status
+                    </a>
+
+                    <a asp-action="Delete"
+                       asp-route-id="@appointment.AppointmentId"
+                       class="btn btn-danger btn-sm">
+                        Delete
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

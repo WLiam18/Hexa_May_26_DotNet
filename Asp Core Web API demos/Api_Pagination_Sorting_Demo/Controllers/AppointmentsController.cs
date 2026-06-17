@@ -19,7 +19,7 @@ namespace Api_Pagination_Sorting_Demo.Controllers
             _appointmentService = appointmentService;
             _logger = logger;
         }
-        [Authorize(Roles="Admin,Doctor,Receptionist")]
+        [Authorize(Roles="Admin,User,Doctor")]
         [HttpGet]
         public async Task<IActionResult> GetAppointments([FromQuery] AppointmentFilterRequestDto filter)
         {

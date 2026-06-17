@@ -1,0 +1,52 @@
+﻿@model HospitalAppointmentMvc.Dtos.AppointmentResponseDto
+
+@{
+    ViewData["Title"] = "Delete Appointment";
+}
+
+<h2>Delete Appointment</h2>
+
+<h4>Are you sure you want to delete this appointment?</h4>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Doctor</th>
+        <td>@Model.DoctorName</td>
+    </tr>
+
+    <tr>
+        <th>Patient</th>
+        <td>@Model.PatientName</td>
+    </tr>
+
+    <tr>
+        <th>Date</th>
+        <td>@Model.AppointmentDate</td>
+    </tr>
+
+    <tr>
+        <th>Time</th>
+        <td>@Model.AppointmentTime</td>
+    </tr>
+
+    <tr>
+        <th>Status</th>
+        <td>@Model.AppointmentStatus</td>
+    </tr>
+
+    <tr>
+        <th>Reason</th>
+        <td>@Model.Reason</td>
+    </tr>
+</table>
+
+<form asp-action="DeleteConfirmed"
+      asp-route-id="@Model.AppointmentId"
+      method="post">
+
+    @Html.AntiForgeryToken()
+
+    <button type="submit" class="btn btn-danger">Delete</button>
+
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>
