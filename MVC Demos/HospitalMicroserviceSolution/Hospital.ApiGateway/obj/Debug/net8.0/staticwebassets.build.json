@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "kBz/AJOoZ2poN4mVf1rUy9JJ3sHyxJMzaXzfPRW6epg=",
+  "Source": "Hospital.ApiGateway",
+  "BasePath": "_content/Hospital.ApiGateway",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
