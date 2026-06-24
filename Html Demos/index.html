@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Learning Academy</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <header>
+        <h1>Smart Learning Academy</h1>
+        <p>Learn HTML, CSS, JavaScript, and Web Development</p>
+
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#courses">Courses</a> |
+            <a href="#about">About</a> |
+            <a href="#contact">Contact</a> |
+            <a  href="register">Register</a>
+        </nav>
+    </header>
+    <main id="home">
+        <section>
+            <h2>Welcome to Smart Learning Academy</h2>
+            <p> We provide beginner friendly training in
+                 web development programming software testing Cloud architect level Data engineering data science etc </p>
+        </section>
+    </main>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Smart Learning Academy is dedicated to providing high-quality
+             education in web development and programming. Our courses are 
+             designed for beginners and professionals alike.</p>
+
+             <article>
+                <h3> why Choose Us?</h3>
+                <p>We offer comprehensive courses, experienced instructors, 
+                    and a supportive learning environment to help you 
+                    succeed in your web development journey.</p>
+             </article>
+    </section>
+
+    <section id="courses">
+        <h2>Our Courses</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Web Development</li>
+            <li>Software Testing</li>
+            <li>Cloud Architecture</li>
+            <li>Data Engineering</li>
+            <li>Data Science</li>
+        </ul>
+        <h3> Learning Path</h3>
+        <ol>
+            <li> Learn HTML </li>
+            <li> Learn CSS </li>
+            <li> Learn JavaScript </li>
+            <li>Build Projects</li>
+        </ol>
+    <section>
+        <h2>Course Terms</h2>
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language, the standard language for creating web pages.</dd>
+
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets, used for describing the presentation of a document written in HTML or XML.</dd>
+            <dt>JavaScript</dt>
+            <dd>A high-level, interpreted programming language that enables interactive web pages and is an essential part of web applications.</dd>
+        </dl>
+    </section>
+
+    <section>
+        <h2>Our Classroom</h2>
+        <figure>
+            <img src="./Images/classroom.jpg" alt="Classroom" />
+            <figcaption>Our modern classroom equipped with the latest technology.</figcaption>
+    </section>
+
+    <section>
+        <h2>Course Schedule</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Course</th>
+                    <th>Duration</th>
+                    <th>Mode</th>
+                    <th>Fee</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML & CSS</td>
+                    <td>4 weeks</td>
+                    <td>Online</td>
+                    <td>$200</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>6 weeks</td>
+                    <td>Online</td>
+                    <td>$300</td>
+                </tr>
+                <tr>
+                    <td>Web Development</td>
+                    <td>8 weeks</td>
+                    <td>Online</td>
+                    <td>$400</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">New Batches starts every Monday</td>
+                    
+                </tr>
+            </tfoot>
+            </table>
+    </section>
+
+    <section id="register">
+        <h2>Register for a course</h2>
+        <form action="/submit_registration" method="post">
+            <fieldset>
+                <legend>
+                    Student Details 
+                </legend>
+
+                <label for="studentName">FullName </label>
+                <input type="text" id="studentName" name="studentName" required/>
+                <br><br/>
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" required/>
+
+                <br><br/>
+                <label for="mobile">Mobile Number</label>
+                <input type="tel" id="mobile" name="mobile" required/>
+
+                <br/><br/>
+                <label for="course">Select Course</label>
+                <select id="course" name="course">
+                    <option value="">-- Select Course --</option>
+                    <option value="html">HTML</option>
+                    <option value="csss">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                </select>
+
+                <br/><br/>
+                <p> Training Mode </p>
+                <input type="radio" id="online" name="mode" value="online">
+                <label for="online">Online</label>
+                <input type="radio" id="offline" name="mode" value="offline">
+                <label for="offline">Offline</label>
+                <br/><br/>
+
+                <input type="checkbox" id="terms" name="terms" required/>
+                <label for="terms"> I Accept the terms and Conditions.</label>
+
+                <br/><br/>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+                <br/>
+                <br/>
+                <button type="submit">submit Registration</button>
+                <button type="reset">Clear</button>
+            </fieldset>
+            </form>
+            </section>
+            <section>
+                <h2>Learning Media</h2>
+                <h3>Intro Audio</h3>
+                <audio controls>
+                    <source src="./Images/intro.mp3" type="audio/mpeg">
+                    Your browser does not support the audio content
+                </audio>
+
+                <h3> Course Preview Video</h3>
+                <video controls width="500">
+                    <source src="./Images/course-preview.mp4" type="video/mp4">
+                    Your browser does not support the audio content
+                </video>
+            </section>
+
+
+            <section>
+                <h2>Find Us</h2>
+                <iframe src="https://www.google.com/maps?q=Palladam,Tamil Nadu,India&output=embed" 
+                width="500" height="500" title="Smart Academy Location" 
+                style="border:0" loading="lazy"
+                allowfullscreen=""
+    ></iframe>
+                </iframe>
+            </section>
+
+            <section>
+                <h2>Special Offers</h2>
+                <p><strong> Important : </strong> Admission are open now.</p>
+                <p><em>Limitesd Seats available</em></p>
+                <p>Original Price: <del>$499</del> Offer Price: <ins>$299</ins>.</p>
+                <p> HTML stands For  : <abbr title="HyperText Markup Language">HTML</abbr>.</p>
+                <p>Press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save.</p>
+                <p> Water formula is H<sub>2</sub>0.</p>
+                <p> Square Value: 5 <sup>2</sup>=25.</p>
+            </section>   </body>
+
+            <aside>
+                <h2> Trainer Note</h2>
+                <p> Practice Daily for 30 minutes to become string in HTML.</p>
+            </aside>
+
+            <footer id="contact">
+                <h2>Cotact Us</h2>
+                <address>
+                    Smart Learning Academy <br/>
+                    Palladam, Tirupur, TamilNadu.
+                    Email: <a href="mailto:info@smartacdemy.com">info@smartacdemy.com</a><br/>
+                    Phone: <a href="tel:+9876543210">+91 9876543210</a>
+
+                    <p>&copy; 2026 Smart Learning Academy. All rights reserved.</p>
+                </address>
+            </footer>
+</html>
