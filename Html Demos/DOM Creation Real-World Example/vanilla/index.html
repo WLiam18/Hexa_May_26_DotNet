@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Departures Board — DOM Creation Example</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Top bar -->
+    <header class="topbar">
+      <div class="brand">
+        <div class="live"><span class="dot"></span><span>LIVE · SKY HARBOR INTL · TERMINAL 4</span></div>
+        <h1>DEPARTURES</h1>
+      </div>
+      <div class="clock-wrap">
+        <div class="clock" id="clock">--:--:--</div>
+        <span class="tz">LOCAL TIME · GMT-7</span>
+      </div>
+    </header>
+
+    <!-- Board -->
+    <section class="board-card">
+      <div class="col-head">
+        <div>TIME</div><div>FLIGHT</div><div>DESTINATION</div><div>GATE</div><div class="center">STATUS</div>
+      </div>
+
+      <!-- Rows are injected here by JavaScript -->
+      <div class="board" id="board"></div>
+
+      <div class="controls">
+        <button id="addBtn" class="btn-primary">+ Add Departure</button>
+        <button id="resetBtn" class="btn-ghost">Reset Board</button>
+        <span class="footer" id="footer"></span>
+      </div>
+
+      <div class="legend" id="legend"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
