@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airport Baggage Tracking Dashborad</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Airport Baggage Tracking Dashborad</h1>
+      <p>Monitor and update passenger baggage status.</p>
+    </header>
+    <main>
+      <section class="dashboard-summary">
+        <div>
+          <h2 id="totalBags">0</h2>
+          <p>Total Bags</p>
+        </div>
+        <div>
+          <h2 id="checkedInCount">0</h2>
+          <p>Checked In</p>
+        </div>
+        <div>
+          <h2 id="securityCount">0</h2>
+          <p>At Security</p>
+        </div>
+        <div>
+          <h2 id="loadedCount">0</h2>
+          <p>Loaded</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Baggage List</h2>
+        <!--- javascript will create baggage card  inside the below div-->
+        <div id="baggageContainer" class="baggage-container"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
