@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color:#222;
+}
+
+header{
+    background: linear-gradient(135deg, #0b3d91, #1976d2);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1{
+    margin-bottom: 10px;
+}
+
+main{
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.dashboard-summary{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:15px;
+    margin-bottom: 30px;
+}
+
+.dashboard-summary div{
+    color: #0b3d91;
+    font-size: 32px;
+}
+
+section h2{
+    margin-bottom: 20px;
+    color:#0b3d91;
+}
+
+.baggage-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:18px;
+}
+
+.bag-card{
+    background: white;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    border-top: 6px solid #1976d2;
+}
+.bag-card h3 {
+    color: #0b3d91;
+    margin-bottom: 12px;
+}
+
+.bag-card p {
+    margin-bottom: 8px;
+}
+
+.status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.status-checked {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.status-security {
+    background: #e3f2fd;
+    color: #0d47a1;
+}
+
+.status-loaded {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.action-buttons {
+    margin-top: 15px;
+}
+
+button {
+    border: none;
+    padding: 10px 12px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.security-btn {
+    background: #1976d2;
+    color: white;
+}
+
+.loaded-btn {
+    background: #2e7d32;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+
+button:disabled{
+    background: #ccc;
+    cursor: not-allowed;
+}
+@media (max-width: 900px) {
+    .dashboard-summary,
+    .baggage-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .dashboard-summary,
+    .baggage-container {
+        grid-template-columns: 1fr;
+    }
+}

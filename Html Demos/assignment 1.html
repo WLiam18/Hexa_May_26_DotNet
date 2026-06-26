@@ -1,0 +1,1307 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment — Build the Northstar Website (HTML &amp; CSS)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #181b23;
+        --ink-soft: #444b5a;
+        --paper: #f4f6fa;
+        --paper-2: #ffffff;
+        --line: #dce0ea;
+        --brand: #3b45c7;
+        --brand-soft: #e9ebfa;
+        --brand-ink: #262e9a;
+        --good: #1f8a4c;
+        --good-bg: #e7f6ed;
+        --warn: #b5601a;
+        --warn-bg: #fbefe2;
+        --space: #0c1120;
+        --star: #a9c2ff;
+        --radius: 14px;
+        --maxw: 880px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 20px;
+      }
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: "Newsreader", Georgia, serif;
+        font-size: 18.5px;
+        line-height: 1.66;
+        -webkit-font-smoothing: antialiased;
+      }
+      .display {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 700;
+        line-height: 1.06;
+        letter-spacing: -0.02em;
+      }
+      .mono {
+        font-family: "JetBrains Mono", monospace;
+      }
+      a {
+        color: var(--brand-ink);
+      }
+      a:hover {
+        color: var(--brand);
+      }
+
+      .wrap {
+        max-width: var(--maxw);
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      /* hero band */
+      .masthead {
+        background: radial-gradient(
+          ellipse at 78% -10%,
+          #28336a,
+          var(--space) 60%
+        );
+        color: #fff;
+        padding: 54px 0 40px;
+        position: relative;
+        overflow: hidden;
+      }
+      .masthead .star {
+        position: absolute;
+        width: 3px;
+        height: 3px;
+        background: #fff;
+        border-radius: 50%;
+        opacity: 0.8;
+      }
+      .masthead .s1 {
+        top: 24px;
+        left: 12%;
+      }
+      .masthead .s2 {
+        top: 60px;
+        left: 82%;
+        width: 4px;
+        height: 4px;
+      }
+      .masthead .s3 {
+        top: 120px;
+        left: 40%;
+      }
+      .masthead .s4 {
+        top: 40px;
+        left: 60%;
+      }
+      .masthead .s5 {
+        top: 150px;
+        left: 88%;
+        width: 2px;
+        height: 2px;
+      }
+      .eyebrow {
+        font-family: "JetBrains Mono", monospace;
+        font-size: 13px;
+        color: var(--star);
+        border: 1px solid #34406e;
+        display: inline-block;
+        padding: 5px 12px;
+        border-radius: 30px;
+        margin-bottom: 18px;
+      }
+      .masthead h1 {
+        font-size: clamp(30px, 5.4vw, 50px);
+        margin: 0 0 12px;
+      }
+      .masthead p.sub {
+        font-size: clamp(17px, 2.2vw, 20px);
+        max-width: 60ch;
+        color: #c8d2f3;
+        margin: 0 0 22px;
+      }
+      .factbar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0;
+        border: 1px solid #2c3760;
+        border-radius: 12px;
+        overflow: hidden;
+        background: #0e1530aa;
+        backdrop-filter: blur(4px);
+      }
+      .fact {
+        flex: 1;
+        min-width: 140px;
+        padding: 12px 16px;
+        border-right: 1px solid #2c3760;
+      }
+      .fact:last-child {
+        border-right: 0;
+      }
+      .fact .k {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 11px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #8b97c4;
+      }
+      .fact .v {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        color: #fff;
+        margin-top: 2px;
+      }
+
+      main {
+        padding: 18px 0 90px;
+      }
+
+      section.block {
+        padding: 34px 0;
+        border-top: 1px solid var(--line);
+      }
+      section.block:first-child {
+        border-top: 0;
+      }
+      .kicker {
+        font-family: "JetBrains Mono", monospace;
+        font-size: 12.5px;
+        color: var(--brand);
+        background: var(--brand-soft);
+        display: inline-block;
+        padding: 4px 11px;
+        border-radius: 7px;
+        margin-bottom: 14px;
+      }
+      h2 {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 700;
+        font-size: clamp(24px, 3.4vw, 32px);
+        letter-spacing: -0.01em;
+        margin: 0 0 12px;
+      }
+      h3 {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        margin: 26px 0 8px;
+      }
+      p {
+        max-width: 70ch;
+        margin: 0 0 14px;
+      }
+      strong {
+        font-weight: 600;
+      }
+      em {
+        font-style: italic;
+      }
+      code {
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.84em;
+        background: #eaedf6;
+        color: var(--brand-ink);
+        padding: 2px 6px;
+        border-radius: 5px;
+      }
+
+      /* learning outcomes / plain lists */
+      ul.lo {
+        list-style: none;
+        margin: 0 0 14px;
+        padding: 0;
+      }
+      ul.lo li {
+        position: relative;
+        padding: 6px 0 6px 30px;
+        max-width: 72ch;
+      }
+      ul.lo li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 13px;
+        width: 11px;
+        height: 11px;
+        border-radius: 3px;
+        background: var(--brand);
+      }
+
+      /* task groups */
+      .part-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 700;
+        font-size: 13px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #fff;
+        background: var(--brand);
+        padding: 6px 12px;
+        border-radius: 8px;
+        margin: 6px 0 4px;
+      }
+      .task {
+        background: var(--paper-2);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 18px 20px;
+        margin: 14px 0;
+      }
+      .task h4 {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 600;
+        font-size: 17px;
+        margin: 0 0 4px;
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+      }
+      .task h4 .num {
+        font-family: "JetBrains Mono", monospace;
+        font-size: 13px;
+        color: #fff;
+        background: var(--ink);
+        border-radius: 6px;
+        padding: 3px 8px;
+      }
+      .task h4 .ch {
+        margin-left: auto;
+        font-family: "JetBrains Mono", monospace;
+        font-size: 11.5px;
+        font-weight: 500;
+        color: var(--ink-soft);
+        background: #eef1f7;
+        padding: 3px 9px;
+        border-radius: 20px;
+        white-space: nowrap;
+      }
+      .task p {
+        margin: 6px 0 0;
+        font-size: 16.5px;
+        color: var(--ink-soft);
+        max-width: none;
+      }
+      ul.do {
+        list-style: none;
+        margin: 10px 0 0;
+        padding: 0;
+      }
+      ul.do li {
+        position: relative;
+        padding: 5px 0 5px 28px;
+        font-size: 16px;
+        max-width: none;
+      }
+      ul.do li::before {
+        content: "\2610";
+        position: absolute;
+        left: 0;
+        top: 3px;
+        font-size: 17px;
+        color: #9aa3bb;
+        font-family: "JetBrains Mono", monospace;
+      }
+
+      /* requirement chips */
+      .reqgrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin: 14px 0;
+      }
+      .req {
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 11px 14px;
+        font-size: 15.5px;
+      }
+      .req .tk {
+        color: var(--brand);
+        font-weight: 700;
+        font-family: "JetBrains Mono", monospace;
+        flex: 0 0 auto;
+      }
+
+      /* callouts */
+      .callout {
+        border-radius: 12px;
+        padding: 14px 18px;
+        margin: 18px 0;
+        font-size: 16px;
+        line-height: 1.55;
+        border: 1px solid;
+      }
+      .callout .tagword {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 4px;
+      }
+      .callout p {
+        margin: 0;
+        max-width: none;
+      }
+      .tip {
+        background: var(--good-bg);
+        border-color: #bfe6cc;
+      }
+      .tip .tagword {
+        color: var(--good);
+      }
+      .warn {
+        background: var(--warn-bg);
+        border-color: #f0d6bc;
+      }
+      .warn .tagword {
+        color: var(--warn);
+      }
+      .note {
+        background: var(--brand-soft);
+        border-color: #cbd0f4;
+      }
+      .note .tagword {
+        color: var(--brand-ink);
+      }
+
+      /* tables */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 16px 0;
+        font-size: 15.5px;
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        overflow: hidden;
+      }
+      th {
+        text-align: left;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 12px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: var(--ink-soft);
+        background: #f4f6fb;
+        padding: 11px 14px;
+        border-bottom: 1px solid var(--line);
+      }
+      td {
+        padding: 11px 14px;
+        border-bottom: 1px solid #edeff5;
+        vertical-align: top;
+      }
+      tr:last-child td {
+        border-bottom: 0;
+      }
+      td.w {
+        white-space: nowrap;
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 600;
+      }
+      .total td {
+        background: #f4f6fb;
+        font-weight: 700;
+        font-family: "Space Grotesk", sans-serif;
+      }
+
+      /* appendix content blocks */
+      .data {
+        background: #fff;
+        border: 1px solid var(--line);
+        border-left: 4px solid var(--brand);
+        border-radius: 0 12px 12px 0;
+        padding: 14px 18px;
+        margin: 12px 0;
+        font-size: 16px;
+      }
+      .data .lab {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 600;
+        font-size: 12.5px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--brand-ink);
+        margin-bottom: 6px;
+      }
+      .data p {
+        margin: 0 0 6px;
+        max-width: none;
+      }
+      .pill {
+        font-family: "JetBrains Mono", monospace;
+        font-size: 12.5px;
+        background: #fff;
+        border: 1px solid var(--line);
+        color: var(--ink);
+        padding: 3px 9px;
+        border-radius: 7px;
+        display: inline-block;
+        margin: 3px 4px 3px 0;
+      }
+
+      footer {
+        border-top: 1px solid var(--line);
+        padding: 30px 0 0;
+        color: var(--ink-soft);
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 14px;
+      }
+
+      @media (max-width: 680px) {
+        body {
+          font-size: 17.5px;
+        }
+        .reqgrid {
+          grid-template-columns: 1fr;
+        }
+        .fact {
+          border-right: 0;
+          border-bottom: 1px solid #2c3760;
+        }
+        .fact:last-child {
+          border-bottom: 0;
+        }
+      }
+      @media print {
+        body {
+          background: #fff;
+          font-size: 11.5pt;
+        }
+        .masthead {
+          background: #0c1120 !important;
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+        .task,
+        .req,
+        .data,
+        table {
+          break-inside: avoid;
+        }
+        section.block {
+          padding: 18px 0;
+        }
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="masthead">
+      <span class="star s1"></span><span class="star s2"></span
+      ><span class="star s3"></span><span class="star s4"></span
+      ><span class="star s5"></span>
+      <div class="wrap">
+        <span class="eyebrow mono">Assignment · Part III of the series</span>
+        <h1 class="display">Build the Northstar website</h1>
+        <p class="sub">
+          Using only hand-written HTML and CSS, recreate the Northstar Astronomy
+          Club site you studied in <em>The Markup Manual</em> and
+          <em>The Style Manual</em>. You are given the content; your job is to
+          structure it semantically and style it into a finished, responsive
+          page.
+        </p>
+        <div class="factbar">
+          <div class="fact">
+            <div class="k">Type</div>
+            <div class="v">Individual project</div>
+          </div>
+          <div class="fact">
+            <div class="k">Level</div>
+            <div class="v">Beginner → intermediate</div>
+          </div>
+          <div class="fact">
+            <div class="k">Est. time</div>
+            <div class="v">8–12 hours</div>
+          </div>
+          <div class="fact">
+            <div class="k">Weight</div>
+            <div class="v">100 marks (+10 bonus)</div>
+          </div>
+          <div class="fact">
+            <div class="k">Deliver</div>
+            <div class="v">index.html + styles.css</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <!-- BRIEF -->
+      <section class="block">
+        <span class="kicker mono">the brief</span>
+        <h2>The scenario</h2>
+        <p>
+          The Northstar Astronomy Club needs a single-page website to announce
+          its events, publish its season schedule, and let visitors sign up. The
+          club has handed you all of its text and data (see the
+          <a href="#appendix">Starter content</a> appendix). Build the page from
+          an empty file: write the HTML structure first, then a separate
+          stylesheet to bring it to life.
+        </p>
+        <p>
+          This assignment assesses whether you can
+          <strong>choose the right tag for the right job</strong>,
+          <strong>separate structure from style</strong>, and
+          <strong>lay content out responsively</strong> — the three habits both
+          manuals were built around.
+        </p>
+
+        <div class="callout note">
+          <span class="tagword">Read this first</span>
+          <p>
+            You are graded on <em>your own</em> code, not on matching the demo
+            pixel-for-pixel. Reasonable design choices are welcome. What must be
+            correct is the
+            <strong
+              >semantics, the requirements checklist, and the
+              responsiveness</strong
+            >. Do <strong>not</strong> copy the finished tutorial file — build
+            it yourself.
+          </p>
+        </div>
+      </section>
+
+      <!-- LEARNING OUTCOMES -->
+      <section class="block">
+        <span class="kicker mono">what this proves</span>
+        <h2>Learning outcomes</h2>
+        <p>On completing this assignment you should be able to:</p>
+        <ul class="lo">
+          <li>
+            Structure a web page with correct, semantic HTML5 (document
+            skeleton, headings, lists, links, media, sectioning, tables, and
+            forms).
+          </li>
+          <li>
+            Connect and organise an external stylesheet, and target elements
+            precisely with selectors.
+          </li>
+          <li>
+            Control spacing and sizing with the box model, and theme a site with
+            custom properties.
+          </li>
+          <li>
+            Lay out a page using Flexbox and CSS Grid, choosing the right tool
+            for each region.
+          </li>
+          <li>
+            Make a layout responsive with mobile-first media queries and fluid
+            units.
+          </li>
+          <li>
+            Apply restrained motion and meet basic accessibility standards.
+          </li>
+        </ul>
+      </section>
+
+      <!-- PART A: HTML -->
+      <section class="block">
+        <span class="kicker mono">part a</span>
+        <h2>Part A — Structure it with HTML</h2>
+        <p>
+          Create <code>index.html</code>. Work top to bottom; each task lists
+          the acceptance criteria you'll be checked against. The chapter tag on
+          the right points to where it was taught.
+        </p>
+
+        <div class="task">
+          <h4>
+            <span class="num">A1</span> The document skeleton
+            <span class="ch">HTML · Ch.1</span>
+          </h4>
+          <p>Set up a valid, mobile-ready document.</p>
+          <ul class="do">
+            <li>
+              Include <code>&lt;!DOCTYPE html&gt;</code>,
+              <code>&lt;html lang="en"&gt;</code>, <code>&lt;head&gt;</code>,
+              and <code>&lt;body&gt;</code>.
+            </li>
+            <li>
+              Add <code>&lt;meta charset&gt;</code>, the
+              <code>&lt;meta name="viewport"&gt;</code> line, and a descriptive
+              <code>&lt;title&gt;</code>.
+            </li>
+            <li>
+              Add a <code>&lt;meta name="description"&gt;</code> summarising the
+              club.
+            </li>
+          </ul>
+        </div>
+
+        <div class="task">
+          <h4>
+            <span class="num">A2</span> Header &amp; navigation
+            <span class="ch">HTML · Ch.4, 6</span>
+          </h4>
+          <p>
+            Build a site header containing the club name and a navigation menu.
+          </p>
+          <ul class="do">
+            <li>
+              Wrap it in a <code>&lt;header&gt;</code> and use a
+              <code>&lt;nav&gt;</code> for the menu.
+            </li>
+            <li>
+              Build the menu as a <code>&lt;ul&gt;</code> of
+              <code>&lt;a&gt;</code> links.
+            </li>
+            <li>
+              Each link must jump to a section further down using an
+              <code>#id</code> anchor (Events, Schedule, Join).
+            </li>
+          </ul>
+        </div>
+
+        <div class="task">
+          <h4>
+            <span class="num">A3</span> Hero section
+            <span class="ch">HTML · Ch.2, 6</span>
+          </h4>
+          <p>Create an intro banner that welcomes visitors.</p>
+          <ul class="do">
+            <li>
+              Use a single <code>&lt;h1&gt;</code> for the page's main title.
+            </li>
+            <li>
+              Add the tagline and intro paragraph, with the meeting day in
+              <code>&lt;strong&gt;</code>.
+            </li>
+            <li>Include a call-to-action link to the join section.</li>
+          </ul>
+        </div>
+
+        <div class="task">
+          <h4>
+            <span class="num">A4</span> Events — a set of cards
+            <span class="ch">HTML · Ch.6</span>
+          </h4>
+          <p>Present the four events as self-contained, repeatable units.</p>
+          <ul class="do">
+            <li>
+              Group them inside a <code>&lt;main&gt;</code> and a titled
+              <code>&lt;section&gt;</code> (one <code>&lt;h2&gt;</code>).
+            </li>
+            <li>
+              Make each event an <code>&lt;article&gt;</code> with its own
+              <code>&lt;h3&gt;</code>, date, and description.
+            </li>
+            <li>
+              Justify your choice of <code>&lt;article&gt;</code> over
+              <code>&lt;div&gt;</code> in a code comment.
+            </li>
+          </ul>
+        </div>
+
+        <div class="task">
+          <h4>
+            <span class="num">A5</span> Schedule — a data table
+            <span class="ch">HTML · Ch.7</span>
+          </h4>
+          <p>Turn the schedule data into a proper table.</p>
+          <ul class="do">
+            <li>
+              Use <code>&lt;table&gt;</code> with <code>&lt;caption&gt;</code>,
+              <code>&lt;thead&gt;</code>, and <code>&lt;tbody&gt;</code>.
+            </li>
+            <li>
+              Header cells are <code>&lt;th scope="col"&gt;</code>; data cells
+              are <code>&lt;td&gt;</code>.
+            </li>
+          </ul>
+        </div>
+
+        <div class="task">
+          <h4>
+            <span class="num">A6</span> Join — a form
+            <span class="ch">HTML · Ch.8</span>
+          </h4>
+          <p>Build the membership form so the club can collect sign-ups.</p>
+          <ul class="do">
+            <li>
+              Wrap controls in a <code>&lt;form&gt;</code>. Every input has a
+              <code>&lt;label&gt;</code> tied by
+              <code>for</code>/<code>id</code>.
+            </li>
+            <li>
+              Include: a text name field, an <code>email</code> field, a
+              <code>&lt;select&gt;</code> for experience, a
+              <code>&lt;textarea&gt;</code>, a consent checkbox, and a submit
+              <code>&lt;button&gt;</code>.
+            </li>
+            <li>
+              Mark the name and email <code>required</code> and give text fields
+              a <code>placeholder</code>.
+            </li>
+          </ul>
+        </div>
+
+        <div class="task">
+          <h4>
+            <span class="num">A7</span> Footer
+            <span class="ch">HTML · Ch.6</span>
+          </h4>
+          <p>
+            Close the page with a <code>&lt;footer&gt;</code> containing contact
+            info (a <code>mailto:</code> link) and a copyright line.
+          </p>
+        </div>
+      </section>
+
+      <!-- PART B: CSS -->
+      <section class="block">
+        <span class="kicker mono">part b</span>
+        <h2>Part B — Style it with CSS</h2>
+        <p>
+          Create a separate <code>styles.css</code> and link it from the
+          <code>&lt;head&gt;</code>. Style only with CSS — do not add inline
+          <code>style=""</code> attributes (except none at all is the goal).
+        </p>
+        <span class="part-label">~50 marks · The Style Manual</span>
+
+        <div class="task">
+          <h4>
+            <span class="num">B1</span> Connect, reset &amp; base
+            <span class="ch">CSS · Ch.1, 3</span>
+          </h4>
+          <ul class="do">
+            <li>
+              Link the external stylesheet with
+              <code>&lt;link rel="stylesheet"&gt;</code>.
+            </li>
+            <li>
+              Add a reset that sets <code>box-sizing: border-box</code> and
+              removes default margins.
+            </li>
+            <li>
+              Set base <code>font-family</code>, <code>line-height</code>,
+              colour, and background on <code>body</code>.
+            </li>
+          </ul>
+        </div>
+
+        <div class="task">
+          <h4>
+            <span class="num">B2</span> A variable-driven palette
+            <span class="ch">CSS · Ch.4</span>
+          </h4>
+          <ul class="do">
+            <li>
+              Define at least <strong>five</strong> custom properties on
+              <code>:root</code> (colours + a radius).
+            </li>
+            <li>
+              Use <code>var(...)</code> everywhere those values appear — no
+              hard-coded duplicates.
+            </li>
+            <li>Give the hero a gradient background.</li>
+          </ul>
+        </div>
+
+        <div class="task">
+          <h4>
+            <span class="num">B3</span> Typography
+            <span class="ch">CSS · Ch.5</span>
+          </h4>
+          <ul class="do">
+            <li>
+              Load and apply at least one web font, with a generic fallback.
+            </li>
+            <li>
+              Set a clear type scale; remove underlines from nav links; control
+              <code>line-height</code> and a heading's
+              <code>letter-spacing</code>.
+            </li>
+          </ul>
+        </div>
+
+        <div class="task">
+          <h4>
+            <span class="num">B4</span> The box &amp; the cards
+            <span class="ch">CSS · Ch.2, 3</span>
+          </h4>
+          <ul class="do">
+            <li>
+              Centre the content with a <code>max-width</code> container and
+              auto margins.
+            </li>
+            <li>
+              Style event cards with padding, border, radius, and a background —
+              using <strong>class</strong> selectors.
+            </li>
+            <li>
+              Stripe the schedule table rows with <code>:nth-child(even)</code>.
+            </li>
+          </ul>
+        </div>
+
+        <div class="task">
+          <h4>
+            <span class="num">B5</span> Layout — Flexbox
+            <span class="ch">CSS · Ch.7</span>
+          </h4>
+          <ul class="do">
+            <li>
+              Make the header a flex row: logo left, nav pushed right
+              (<code>margin-left:auto</code>).
+            </li>
+            <li>Use flex to align the form fields and/or button row.</li>
+          </ul>
+        </div>
+
+        <div class="task">
+          <h4>
+            <span class="num">B6</span> Layout — Grid
+            <span class="ch">CSS · Ch.8</span>
+          </h4>
+          <ul class="do">
+            <li>
+              Lay the event cards out with <code>display: grid</code> and
+              <code>gap</code>.
+            </li>
+            <li>
+              Explain in a comment why Grid (not Flexbox) suits the card area.
+            </li>
+          </ul>
+        </div>
+
+        <div class="task">
+          <h4>
+            <span class="num">B7</span> Responsive
+            <span class="ch">CSS · Ch.9</span>
+          </h4>
+          <ul class="do">
+            <li>Work mobile-first: cards stack in one column by default.</li>
+            <li>
+              Add <code>@media (min-width: …)</code> rules so cards become 2
+              then 3 columns on wider screens.
+            </li>
+            <li>
+              Use a fluid unit somewhere meaningful (e.g.
+              <code>clamp()</code> on the <code>h1</code>).
+            </li>
+          </ul>
+        </div>
+
+        <div class="task">
+          <h4>
+            <span class="num">B8</span> Motion &amp; polish
+            <span class="ch">CSS · Ch.10</span>
+          </h4>
+          <ul class="do">
+            <li>
+              Add a hover effect to the cards and/or button using
+              <code>transition</code> + <code>transform</code>.
+            </li>
+            <li>
+              Provide a visible <code>:focus</code> state on links and the
+              button (keyboard accessibility).
+            </li>
+            <li>
+              Respect <code>@media (prefers-reduced-motion: reduce)</code>.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- REQUIREMENTS -->
+      <section class="block">
+        <span class="kicker mono">non-negotiables</span>
+        <h2>Hard requirements</h2>
+        <p>
+          These are checked before marking the rest. Missing any will cap your
+          grade.
+        </p>
+        <div class="reqgrid">
+          <div class="req">
+            <span class="tk">01</span
+            ><span
+              >Two separate files: <code>index.html</code> and
+              <code>styles.css</code> (external CSS only).</span
+            >
+          </div>
+          <div class="req">
+            <span class="tk">02</span
+            ><span
+              >Hand-written code. No frameworks (Bootstrap, Tailwind) and no CSS
+              libraries.</span
+            >
+          </div>
+          <div class="req">
+            <span class="tk">03</span
+            ><span
+              >HTML passes the
+              <a
+                href="https://validator.w3.org/nu/"
+                target="_blank"
+                rel="noopener"
+                >W3C validator</a
+              >
+              with no errors.</span
+            >
+          </div>
+          <div class="req">
+            <span class="tk">04</span
+            ><span
+              >Exactly one <code>&lt;h1&gt;</code>; heading levels nest in order
+              (no skipping).</span
+            >
+          </div>
+          <div class="req">
+            <span class="tk">05</span
+            ><span
+              >Every meaningful image has <code>alt</code> text; decorative ones
+              use <code>alt=""</code>.</span
+            >
+          </div>
+          <div class="req">
+            <span class="tk">06</span
+            ><span
+              >Layout is responsive and usable from 320px up to desktop, no
+              horizontal scroll.</span
+            >
+          </div>
+          <div class="req">
+            <span class="tk">07</span
+            ><span
+              >No inline <code>style=""</code> attributes; no
+              <code>!important</code> hacks.</span
+            >
+          </div>
+          <div class="req">
+            <span class="tk">08</span
+            ><span>CSS is commented and grouped into logical sections.</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- STRETCH -->
+      <section class="block">
+        <span class="kicker mono">going further</span>
+        <h2>
+          Stretch goals
+          <span
+            style="
+              font-family: &quot;Space Grotesk&quot;;
+              font-weight: 600;
+              font-size: 15px;
+              color: var(--brand);
+            "
+            >· up to +10 bonus</span
+          >
+        </h2>
+        <p>
+          Attempt any of these once the core page is complete. Quality over
+          quantity.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Challenge</th>
+              <th>Bonus</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="w">Second page</td>
+              <td>
+                Add an <code>about.html</code> with the club story, linked from
+                the nav with a relative path. (+4)
+              </td>
+            </tr>
+            <tr>
+              <td class="w">Photo gallery</td>
+              <td>
+                Add a captioned gallery using <code>&lt;figure&gt;</code> and a
+                responsive <code>repeat(auto-fit, minmax())</code> grid. (+3)
+              </td>
+            </tr>
+            <tr>
+              <td class="w">Sticky header</td>
+              <td>
+                Make the header <code>position: sticky</code> and ensure it
+                never overlaps anchored sections. (+2)
+              </td>
+            </tr>
+            <tr>
+              <td class="w">Dark / light toggle</td>
+              <td>
+                Re-theme the whole site by swapping the
+                <code>:root</code> variables under a class. (+3)
+              </td>
+            </tr>
+            <tr>
+              <td class="w">Animated stars</td>
+              <td>
+                Add a twinkling-star <code>@keyframes</code> field behind the
+                hero. (+2)
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- RUBRIC -->
+      <section class="block">
+        <span class="kicker mono">how it's marked</span>
+        <h2>Marking rubric</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Criterion</th>
+              <th style="width: 70px">Marks</th>
+              <th>What earns full marks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="w">HTML semantics &amp; structure</td>
+              <td>20</td>
+              <td>
+                Correct skeleton; meaningful sectioning; right tag for each job;
+                valid markup.
+              </td>
+            </tr>
+            <tr>
+              <td class="w">Content accuracy</td>
+              <td>10</td>
+              <td>
+                All supplied content present, correctly placed, and spelled as
+                given.
+              </td>
+            </tr>
+            <tr>
+              <td class="w">CSS fundamentals</td>
+              <td>15</td>
+              <td>
+                Sensible selectors, box model, working
+                <code>:root</code> variables, no needless duplication.
+              </td>
+            </tr>
+            <tr>
+              <td class="w">Typography &amp; colour</td>
+              <td>10</td>
+              <td>Readable scale, web font with fallback, coherent palette.</td>
+            </tr>
+            <tr>
+              <td class="w">Layout (Flexbox + Grid)</td>
+              <td>20</td>
+              <td>
+                Header flex row and event grid both correct; right tool chosen
+                and justified.
+              </td>
+            </tr>
+            <tr>
+              <td class="w">Responsiveness</td>
+              <td>15</td>
+              <td>
+                Mobile-first; clean reflow at breakpoints; a fluid unit used
+                well.
+              </td>
+            </tr>
+            <tr>
+              <td class="w">Accessibility &amp; motion</td>
+              <td>5</td>
+              <td>Labels, focus states, alt text, reduced-motion honoured.</td>
+            </tr>
+            <tr>
+              <td class="w">Code quality</td>
+              <td>5</td>
+              <td>
+                Comments, consistent naming, tidy formatting, two clean files.
+              </td>
+            </tr>
+            <tr class="total">
+              <td>Total</td>
+              <td>100</td>
+              <td>+10 available from stretch goals</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- SUBMISSION + SELF CHECK -->
+      <section class="block">
+        <span class="kicker mono">handing in</span>
+        <h2>Submission &amp; self-check</h2>
+        <h3>What to submit</h3>
+        <ul class="do">
+          <li>
+            A single folder named <code>yourname-northstar/</code> containing
+            <code>index.html</code> and <code>styles.css</code> (plus any image
+            files), zipped.
+          </li>
+          <li>
+            A short <code>README.txt</code> (150–250 words): which stretch goals
+            you attempted and one thing you found hard and how you solved it.
+          </li>
+        </ul>
+        <h3>Run this checklist before you submit</h3>
+        <ul class="do">
+          <li>
+            Opened <code>index.html</code> in a fresh browser and clicked every
+            nav link — they all jump correctly.
+          </li>
+          <li>
+            Resized the window from narrow to wide — nothing overflows or
+            breaks.
+          </li>
+          <li>
+            Tabbed through the page with the keyboard — focus is always visible.
+          </li>
+          <li>Ran the HTML through the W3C validator — zero errors.</li>
+          <li>Searched the HTML for <code>style="</code> — there are none.</li>
+          <li>
+            Deleted <code>styles.css</code> temporarily — the page still makes
+            sense unstyled (proves clean structure).
+          </li>
+        </ul>
+
+        <div class="callout warn">
+          <span class="tagword">Academic honesty</span>
+          <p>
+            Write your own HTML and CSS. You may consult the two manuals and
+            reference docs, but copying the finished tutorial files, or another
+            student's work, will be treated as plagiarism. The point is the
+            practice, not the pixels.
+          </p>
+        </div>
+        <div class="callout tip">
+          <span class="tagword">A tip for a smooth run</span>
+          <p>
+            Build in the manual's order: get <em>all</em> the HTML done and
+            validating first, viewing it unstyled. Only then start
+            <code>styles.css</code>. Trying to style half-built markup is where
+            most time gets lost.
+          </p>
+        </div>
+      </section>
+
+      <!-- APPENDIX: STARTER CONTENT -->
+      <section class="block" id="appendix">
+        <span class="kicker mono">appendix</span>
+        <h2>Starter content — use exactly this</h2>
+        <p>
+          So everyone is marked on the same material, build your page from the
+          text and data below. Don't invent your own copy; structure
+          <em>this</em>.
+        </p>
+
+        <div class="data">
+          <div class="lab">Site &amp; hero</div>
+          <p><strong>Club name / logo:</strong> 🔭 Northstar Astronomy Club</p>
+          <p><strong>Eyebrow label:</strong> Cedar Hill · every clear Friday</p>
+          <p><strong>H1 / headline:</strong> Look up with us.</p>
+          <p>
+            <strong>Intro paragraph:</strong> A community of stargazers meeting
+            every clear <strong>Friday</strong> night. All ages, all telescopes,
+            no experience required.
+          </p>
+          <p><strong>Button:</strong> Join the club</p>
+        </div>
+
+        <div class="data">
+          <div class="lab">Navigation links</div>
+          <p>
+            <span class="pill">Events → #events</span
+            ><span class="pill">Schedule → #schedule</span
+            ><span class="pill">Join → #join</span>
+          </p>
+        </div>
+
+        <div class="data">
+          <div class="lab">Events (four article cards)</div>
+          <p>
+            <strong>Jupiter night</strong> — Apr 12 — The gas giant and its four
+            Galilean moons through the club's 10-inch reflector.
+            <em>(mark as "New")</em>
+          </p>
+          <p>
+            <strong>Lunar close-up</strong> — Apr 26 — Craters and mountains
+            along the terminator. Bring a red flashlight to save your night
+            vision.
+          </p>
+          <p>
+            <strong>Saturn's rings</strong> — May 10 — The most "wow" object for
+            newcomers. We meet at the darker Dunes Park site.
+          </p>
+          <p>
+            <strong>Perseid meteors</strong> — Aug 12 — No telescope needed;
+            bring a blanket and watch the year's best meteor shower.
+          </p>
+        </div>
+
+        <div class="data">
+          <div class="lab">Schedule table</div>
+          <p>
+            <strong>Caption:</strong> All sessions start at dusk and run ~2
+            hours.
+          </p>
+          <p><strong>Columns:</strong> Date · Location · Target</p>
+          <p>
+            Apr 12 · Cedar Hill · Jupiter<br />
+            Apr 26 · Cedar Hill · The Moon<br />
+            May 10 · Dunes Park · Saturn<br />
+            May 24 · Cedar Hill · Globular clusters
+          </p>
+        </div>
+
+        <div class="data">
+          <div class="lab">Join form fields</div>
+          <p>
+            <span class="pill">text · Name · required</span
+            ><span class="pill">email · Email · required</span
+            ><span class="pill">select · Experience</span
+            ><span class="pill">textarea · Anything you'd love to see?</span
+            ><span class="pill">checkbox · Email me about events</span
+            ><span class="pill">button · Join the club</span>
+          </p>
+          <p>
+            <strong>Experience options:</strong> Total beginner · Some nights
+            out · Seasoned observer
+          </p>
+        </div>
+
+        <div class="data">
+          <div class="lab">Footer</div>
+          <p>Northstar Astronomy Club · Cedar Hill · hi@northstar.club</p>
+          <p>© 2026 Northstar · Built with HTML &amp; CSS.</p>
+        </div>
+      </section>
+
+      <footer>
+        <p>
+          <strong>Build the Northstar website.</strong> Part III of the series,
+          following <em>The Markup Manual</em> (HTML) and
+          <em>The Style Manual</em> (CSS). Submit <code>index.html</code> +
+          <code>styles.css</code>. Good luck — and clear skies.
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
