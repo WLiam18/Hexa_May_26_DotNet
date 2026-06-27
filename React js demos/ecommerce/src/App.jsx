@@ -65,7 +65,7 @@ function App() {
     });
   }
 
-  function handleRemoveLowRated(productId) {
+  function handleRemoveLowRatedProduct(productId) {
     setProductItems((currentProducts) =>
       currentProducts.filter((product) => product.id !== productId),
     );
@@ -112,6 +112,7 @@ function App() {
     <div className={`app role-${loggedInUser.role.toLowerCase()}`}>
       <Header loggedInUser={loggedInUser} onLogout={handleLogout} />
       <Dashboard
+        loggedInUser={loggedInUser}
         searchText={searchText}
         selectedCategory={selectedCategory}
         sortBy={sortBy}
@@ -121,7 +122,7 @@ function App() {
         products={sortedProducts}
         onAddProduct={handleAddProduct}
         onUpdateProduct={handleUpdateProduct}
-        onremoveProduct={handleRemoveLowRated}
+        onRemoveLowRatedProduct={handleRemoveLowRatedProduct}
       />
       {/* <h1> Product Gallery</h1>
       <SearchBox searchText={searchText} onSearchChange={setSearchText} />

@@ -2,6 +2,7 @@ import { CategoryFilter } from "./CategoryFilter";
 import { ProductList } from "./ProductList";
 import { SearchBox } from "./SearchBox";
 import { SortDropdown } from "./SortDropdown";
+import { ProductForm } from "./ProductForm";
 
 export function Dashboard({
   loggedInUser,
