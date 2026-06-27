@@ -219,4 +219,15 @@ export const products = [
     image: "https://picsum.photos/seed/organizer/600/400",
     description: "Bamboo, modular trays.",
   },
+  {
+    id: 21,
+    name: "Damaged Budget Earphones",
+    price: 9.99,
+    category: "Electronics",
+    stock: 6,
+    rating: 1,
+    seller: "SoundHub",
+    image: "https://picsum.photos/seed/damaged-earphones/600/400",
+    description: "Low-rated returned product for admin removal testing.",
+  },
 ];
