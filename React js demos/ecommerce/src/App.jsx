@@ -31,6 +31,7 @@ function App() {
 
     if (!matchedUser) {
       setLoginError("Invalid email or password");
+      return;
     }
 
     setLoggedInUser(matchedUser);
@@ -91,6 +92,7 @@ function App() {
         onSearchChange={setSearchText}
         onCategoryChange={setSelectedCategory}
         onSortChange={setSortBy}
+        products={products}
       />
       {/* <h1> Product Gallery</h1>
       <SearchBox searchText={searchText} onSearchChange={setSearchText} />
