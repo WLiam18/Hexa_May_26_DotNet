@@ -71,7 +71,7 @@ export function ProductCard({
             </button>
           )}
 
-          {isAdmin && (
+          {isAdmin && rating <= 1 && (
             <button
               type="button"
               className="admin-remove-btn"

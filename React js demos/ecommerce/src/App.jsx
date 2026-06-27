@@ -71,7 +71,7 @@ function App() {
     );
   }
 
-  const filteredProducts = intialProducts.filter((product) => {
+  const filteredProducts = productItems.filter((product) => {
     const matchesSearch = product.name
       .toLowerCase()
       .includes(searchText.toLowerCase());

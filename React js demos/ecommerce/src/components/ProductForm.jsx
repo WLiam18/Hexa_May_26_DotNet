@@ -30,7 +30,7 @@ export function ProductForm({
   const [successMessage, setSuccessMessage] = useState("");
 
   function handleInputChange(event) {
-    const [name, value] = event.target;
+    const { name, value } = event.target;
 
     setProductData({
       ...productData,
@@ -58,7 +58,7 @@ export function ProductForm({
     if (
       productData.rating === "" ||
       Number(productData.rating) < 1 ||
-      Number(productData.rating > 5)
+      Number(productData.rating) > 5
     ) {
       return "Rating must be between 1-5.";
     }
@@ -71,7 +71,7 @@ export function ProductForm({
     return "";
   }
 
-  function handleSubmit() {
+  function handleSubmit(event) {
     event.preventDefault();
 
     const validationError = validateProduct();
@@ -96,7 +96,7 @@ export function ProductForm({
 
     if (mode === "add") {
       setProductData({
-        ...productData,
+        ...emptyProduct,
         seller: loggedInUser.name || "",
         image: "https://picsum.photos/seed/new-product/600/400",
       });
@@ -123,7 +123,7 @@ export function ProductForm({
               type="text"
               id={`${mode}-name`}
               name="name"
-              value={productsData.name}
+              value={productData.name}
               onChange={handleInputChange}
               placeholder="Enter  Product name"
             />
@@ -133,7 +133,7 @@ export function ProductForm({
             <select
               id={`${mode}-category`}
               name="category"
-              value={productsData.category}
+              value={productData.category}
               onChange={handleInputChange}
             >
               <option value="Electronics">Electronics</option>
@@ -150,7 +150,7 @@ export function ProductForm({
               id={`${mode}-price`}
               name="price"
               type="number"
-              value={productsData.price}
+              value={productData.price}
               onChange={handleInputChange}
               placeholder="Enter price"
             />
@@ -161,7 +161,7 @@ export function ProductForm({
               id={`${mode}-stock`}
               name="stock"
               type="number"
-              value={productsData.stock}
+              value={productData.stock}
               onChange={handleInputChange}
               placeholder="Enter stock"
             />
@@ -175,7 +175,7 @@ export function ProductForm({
               step="0.1"
               min="1"
               max="5"
-              value={productsData.rating}
+              value={productData.rating}
               onChange={handleInputChange}
               placeholder="1 to 5"
             />
@@ -186,7 +186,7 @@ export function ProductForm({
               id={`${mode}-seller`}
               name="seller"
               type="text"
-              value={productsData.seller}
+              value={productData.seller}
               onChange={handleInputChange}
               placeholder="Enter seller name"
             />
@@ -196,8 +196,8 @@ export function ProductForm({
             <input
               id={`${mode}-description`}
               name="description"
-              type="number"
-              value={productsData.description}
+              type="text"
+              value={productData.description}
               onChange={handleInputChange}
               placeholder="Enter product description"
             />
