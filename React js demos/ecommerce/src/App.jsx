@@ -10,14 +10,46 @@ import { ProductCard } from "./components/ProductCard.jsx";
 import { SearchBox } from "./components/SearchBox.jsx";
 import { CategoryFilter } from "./components/CategoryFilter.jsx";
 import { SortDropdown } from "./components/SortDropdown.jsx";
+import { users } from "./data/users.js";
+import { Header } from "./components/Header.jsx";
+import { Dashboard } from "./components/Dashboard.jsx";
+import { LoginForm } from "./components/LoginForm.jsx";
 function App() {
+  const [loggedInUser, setLoggedInUser] = useState(null);
+  const [loginError, setLoginError] = useState("");
+
   const [searchText, setSearchText] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [sortBy, setSortBy] = useState("");
+
+  function handleLogin(loginData) {
+    const matchedUser = users.find(
+      (user) =>
+        user.email.toLowerCase() === loginData.email.toLowerCase() &&
+        user.password === loginData.password,
+    );
+
+    if (!matchedUser) {
+      setLoginError("Invalid email or password");
+      return;
+    }
+
+    setLoggedInUser(matchedUser);
+    setLoginError("");
+  }
+
+  function handleLogout() {
+    setLoggedInUser(null);
+    setSearchText("");
+    setSelectedCategory("All");
+    setSortBy("");
+  }
+
   const filteredProducts = products.filter((product) => {
     const matchesSearch = product.name
       .toLowerCase()
       .includes(searchText.toLowerCase());
+
     const matchesCategory =
       selectedCategory === "All" || product.category === selectedCategory;
     return matchesCategory && matchesSearch;
@@ -41,9 +73,28 @@ function App() {
     return 0;
   });
 
+  if (!loggedInUser) {
+    return (
+      <>
+        <LoginForm onLogin={handleLogin} />
+        {loginError && <p className="global-error">{loginError}</p>}
+      </>
+    );
+  }
+
   return (
     <div className="app">
-      <h1> Product Gallery</h1>
+      <Header loggedInUser={loggedInUser} onLogout={handleLogout} />
+      <Dashboard
+        searchText={searchText}
+        selectedCategory={selectedCategory}
+        sortBy={sortBy}
+        onSearchChange={setSearchText}
+        onCategoryChange={setSelectedCategory}
+        onSortChange={setSortBy}
+        products={sortedProducts}
+      />
+      {/* <h1> Product Gallery</h1>
       <SearchBox searchText={searchText} onSearchChange={setSearchText} />
       <CategoryFilter
         selectedCategory={selectedCategory}
@@ -51,7 +102,7 @@ function App() {
       />
 
       <SortDropdown soryBy={sortBy} onSortChange={setSortBy} />
-      <ProductList products={sortedProducts} />
+      <ProductList products={sortedProducts} /> */}
     </div>
   );
 }
