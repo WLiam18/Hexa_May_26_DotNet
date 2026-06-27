@@ -5,7 +5,7 @@ import heroImg from "./assets/hero.png";
 import "./App.css";
 import Welcome from "./Welcome";
 import { ProductList } from "./components/ProductList.jsx";
-import { products } from "./data/products.js";
+import { products as intialProducts } from "./data/products.js";
 import { ProductCard } from "./components/ProductCard.jsx";
 import { SearchBox } from "./components/SearchBox.jsx";
 import { CategoryFilter } from "./components/CategoryFilter.jsx";
@@ -17,6 +17,8 @@ import { LoginForm } from "./components/LoginForm.jsx";
 function App() {
   const [loggedInUser, setLoggedInUser] = useState(null);
   const [loginError, setLoginError] = useState("");
+
+  const [productItems, setProductItems] = useState(intialProducts);
 
   const [searchText, setSearchText] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -45,7 +47,31 @@ function App() {
     setSortBy("");
   }
 
-  const filteredProducts = products.filter((product) => {
+  function handleAddProduct(newProduct) {
+    setProductItems((currentProducts) => [
+      ...currentProducts,
+      {
+        ...newProduct,
+        id: Date.now(),
+      },
+    ]);
+  }
+
+  function handleUpdateProduct(updatedProduct) {
+    setProductItems((currentProducts) => {
+      currentProducts.map((product) =>
+        product.id === updatedProduct.id ? updatedProduct : product,
+      );
+    });
+  }
+
+  function handleRemoveLowRated(productId) {
+    setProductItems((currentProducts) =>
+      currentProducts.filter((product) => product.id !== productId),
+    );
+  }
+
+  const filteredProducts = intialProducts.filter((product) => {
     const matchesSearch = product.name
       .toLowerCase()
       .includes(searchText.toLowerCase());
@@ -83,7 +109,7 @@ function App() {
   }
 
   return (
-    <div className="app">
+    <div className={`app role-${loggedInUser.role.toLowerCase()}`}>
       <Header loggedInUser={loggedInUser} onLogout={handleLogout} />
       <Dashboard
         searchText={searchText}
@@ -93,6 +119,9 @@ function App() {
         onCategoryChange={setSelectedCategory}
         onSortChange={setSortBy}
         products={sortedProducts}
+        onAddProduct={handleAddProduct}
+        onUpdateProduct={handleUpdateProduct}
+        onremoveProduct={handleRemoveLowRated}
       />
       {/* <h1> Product Gallery</h1>
       <SearchBox searchText={searchText} onSearchChange={setSearchText} />
