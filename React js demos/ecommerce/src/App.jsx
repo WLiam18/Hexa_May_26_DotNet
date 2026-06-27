@@ -92,7 +92,7 @@ function App() {
         onSearchChange={setSearchText}
         onCategoryChange={setSelectedCategory}
         onSortChange={setSortBy}
-        products={products}
+        products={sortedProducts}
       />
       {/* <h1> Product Gallery</h1>
       <SearchBox searchText={searchText} onSearchChange={setSearchText} />
