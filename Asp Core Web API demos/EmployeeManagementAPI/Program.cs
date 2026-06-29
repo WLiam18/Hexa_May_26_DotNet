@@ -24,6 +24,15 @@ namespace EmployeeManagementAPI
             builder.Services.AddScoped<IDepartmentService, DepartmentService>();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowReactApp", policy =>
+                {
+                    policy.WithOrigins("http://localhost:5173", "https://localhost:5173")
+                          .AllowAnyHeader()
+                          .AllowAnyMethod();
+                });
+            });
             builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
@@ -36,7 +45,7 @@ namespace EmployeeManagementAPI
             }
 
             app.UseHttpsRedirection();
-
+            app.UseCors("AllowReactApp");
             app.UseAuthorization();
 
 

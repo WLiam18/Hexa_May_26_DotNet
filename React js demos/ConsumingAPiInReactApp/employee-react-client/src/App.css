@@ -1,0 +1,94 @@
+/* ================================
+   Employee Form CSS
+   ================================ */
+
+.employee-form {
+  width: 100%;
+  max-width: 520px;
+  margin: 30px auto;
+  padding: 28px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+  border: 1px solid #e2e8f0;
+}
+
+.employee-form h2 {
+  text-align: center;
+  color: #0f4c81;
+  margin-bottom: 24px;
+  font-size: 28px;
+}
+
+.employee-form div {
+  margin-bottom: 18px;
+}
+
+.employee-form label {
+  display: block;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.employee-form input,
+.employee-form select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #1f2937;
+  background: #ffffff;
+  outline: none;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.employee-form input:focus,
+.employee-form select:focus {
+  border-color: #0f4c81;
+  box-shadow: 0 0 0 3px rgba(15, 76, 129, 0.15);
+}
+
+.employee-form button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #0f4c81;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.employee-form button:hover {
+  background: #1e88e5;
+  transform: translateY(-2px);
+}
+
+.employee-form button[type="button"] {
+  background: #64748b;
+}
+
+.employee-form button[type="button"]:hover {
+  background: #475569;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .employee-form {
+    max-width: 94%;
+    padding: 22px;
+  }
+
+  .employee-form h2 {
+    font-size: 24px;
+  }
+
+  .employee-form button {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+}
