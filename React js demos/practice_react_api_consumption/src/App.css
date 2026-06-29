@@ -1,0 +1,119 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #f5f7fa;
+  padding: 30px;
+}
+
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #1f4e79;
+  margin-bottom: 20px;
+}
+
+.error {
+  color: #dc2626;
+  background: #fee2e2;
+  padding: 10px;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+.success {
+  color: #16a34a;
+  background: #dcfce7;
+  padding: 10px;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+.student-form {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 24px;
+}
+
+.student-form h2 {
+  margin-bottom: 16px;
+  font-size: 20px;
+  color: #1f4e79;
+}
+
+.student-form div {
+  margin-bottom: 14px;
+}
+
+.student-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.student-form input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.student-form button {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 6px;
+  background: #1f4e79;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.student-form button[type="button"] {
+  background: #6b7280;
+}
+
+.student-table {
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.student-table th {
+  background: #1f4e79;
+  color: white;
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.student-table td {
+  padding: 10px 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.student-table button {
+  padding: 4px 12px;
+  border: none;
+  border-radius: 4px;
+  background: #1f4e79;
+  color: white;
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+.student-table .delete-btn {
+  background: #dc2626;
+}
+
+.student-table tr:hover {
+  background: #f8fafc;
+}
