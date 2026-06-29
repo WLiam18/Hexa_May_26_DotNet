@@ -15,26 +15,30 @@ namespace Api_Pagination_Sorting_Demo.Controllers
             _authService = authService;
         }
 
+
+        /// <summary>
+        /// Authenticates a user and returns a login response.
+        /// </summary>
+        /// <param name="request">Login request DTO containing userName and password.</param>
+        /// <returns>Login response DTO with userName, role, token, and message.</returns>
         [HttpPost("login")]
-        public async Task<IActionResult> Login(LoginRequestDto loginRequestDto)
+        public IActionResult Login([FromBody] LoginRequestDto request)
         {
-            var result=await _authService.LoginAsync(loginRequestDto);
-            if (!result.Success)
+            // Validate input
+            if (request == null || string.IsNullOrWhiteSpace(request.UserName) || string.IsNullOrWhiteSpace(request.Password))
             {
-                return Unauthorized(new
-                {
-                    StatusCode = StatusCodes.Status401Unauthorized,
-                    Message = result.Message
-                });
-
+                return BadRequest(new { message = "Username and password are required." });
             }
-            return Ok(new
-            {
-                StatusCode = StatusCodes.Status200OK,
-                Message = result.Message,
-                Data = result.Data
-            });
 
+            var loginResponse = _authService.LoginAsync(request);
+
+            if (loginResponse == null)
+            {
+                return Unauthorized(new { message = "Invalid credentials" });
+            }
+
+            // Return populated response DTO
+            return Ok(loginResponse);
         }
 
     }

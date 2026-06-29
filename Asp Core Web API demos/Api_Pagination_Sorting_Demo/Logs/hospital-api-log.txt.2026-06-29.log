@@ -1,0 +1,270 @@
+2026-06-29 14:33:15,414 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7014
+2026-06-29 14:33:15,420 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5162
+2026-06-29 14:33:15,421 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2026-06-29 14:33:15,422 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2026-06-29 14:33:15,422 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Personal\Hexa May 26 DotNet\Git Notes\Hexa_May_26_DotNet\Asp Core Web API demos\Api_Pagination_Sorting_Demo
+2026-06-29 14:36:28,631 [.NET TP Worker] ERROR Microsoft.EntityFrameworkCore.Database.Command - Failed executing DbCommand (71ms) [Parameters=[@__userName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[UserId], [t].[CreatedDate], [t].[Email], [t].[FullName], [t].[IsActive], [t].[PasswordHash], [t].[UserName], [t0].[UserRoleId], [t0].[RoleId], [t0].[UserId], [t0].[RoleId0], [t0].[RoleName]
+FROM (
+    SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FullName], [u].[IsActive], [u].[PasswordHash], [u].[UserName]
+    FROM [Users] AS [u]
+    WHERE [u].[UserName] = @__userName_0
+) AS [t]
+LEFT JOIN (
+    SELECT [u0].[UserRoleId], [u0].[RoleId], [u0].[UserId], [r].[RoleId] AS [RoleId0], [r].[RoleName]
+    FROM [UserRoles] AS [u0]
+    INNER JOIN [Roles] AS [r] ON [u0].[RoleId] = [r].[RoleId]
+) AS [t0] ON [t].[UserId] = [t0].[UserId]
+ORDER BY [t].[UserId], [t0].[UserRoleId]
+2026-06-29 14:36:28,682 [.NET TP Worker] ERROR Microsoft.EntityFrameworkCore.Query - An exception occurred while iterating over the results of a query for context type 'Api_Pagination_Sorting_Demo.Data.HospitalAppointmentDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CreatedDate'.
+Invalid column name 'Email'.
+Invalid column name 'IsActive'.
+Invalid column name 'UserRoleId'.
+Invalid column name 'RoleName'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:4b852a9a-002d-4555-831a-d23b466ff46d
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CreatedDate'.
+Invalid column name 'Email'.
+Invalid column name 'IsActive'.
+Invalid column name 'UserRoleId'.
+Invalid column name 'RoleName'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:4b852a9a-002d-4555-831a-d23b466ff46d
+Error Number:207,State:1,Class:16
+2026-06-29 14:36:38,544 [.NET TP Worker] ERROR Microsoft.EntityFrameworkCore.Database.Command - Failed executing DbCommand (7ms) [Parameters=[@__userName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[UserId], [t].[CreatedDate], [t].[Email], [t].[FullName], [t].[IsActive], [t].[PasswordHash], [t].[UserName], [t0].[UserRoleId], [t0].[RoleId], [t0].[UserId], [t0].[RoleId0], [t0].[RoleName]
+FROM (
+    SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FullName], [u].[IsActive], [u].[PasswordHash], [u].[UserName]
+    FROM [Users] AS [u]
+    WHERE [u].[UserName] = @__userName_0
+) AS [t]
+LEFT JOIN (
+    SELECT [u0].[UserRoleId], [u0].[RoleId], [u0].[UserId], [r].[RoleId] AS [RoleId0], [r].[RoleName]
+    FROM [UserRoles] AS [u0]
+    INNER JOIN [Roles] AS [r] ON [u0].[RoleId] = [r].[RoleId]
+) AS [t0] ON [t].[UserId] = [t0].[UserId]
+ORDER BY [t].[UserId], [t0].[UserRoleId]
+2026-06-29 14:36:38,547 [.NET TP Worker] ERROR Microsoft.EntityFrameworkCore.Query - An exception occurred while iterating over the results of a query for context type 'Api_Pagination_Sorting_Demo.Data.HospitalAppointmentDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CreatedDate'.
+Invalid column name 'Email'.
+Invalid column name 'IsActive'.
+Invalid column name 'UserRoleId'.
+Invalid column name 'RoleName'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:4b852a9a-002d-4555-831a-d23b466ff46d
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CreatedDate'.
+Invalid column name 'Email'.
+Invalid column name 'IsActive'.
+Invalid column name 'UserRoleId'.
+Invalid column name 'RoleName'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:4b852a9a-002d-4555-831a-d23b466ff46d
+Error Number:207,State:1,Class:16
+2026-06-29 14:37:05,981 [.NET TP Worker] ERROR Microsoft.EntityFrameworkCore.Database.Command - Failed executing DbCommand (4ms) [Parameters=[@__userName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[UserId], [t].[CreatedDate], [t].[Email], [t].[FullName], [t].[IsActive], [t].[PasswordHash], [t].[UserName], [t0].[UserRoleId], [t0].[RoleId], [t0].[UserId], [t0].[RoleId0], [t0].[RoleName]
+FROM (
+    SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FullName], [u].[IsActive], [u].[PasswordHash], [u].[UserName]
+    FROM [Users] AS [u]
+    WHERE [u].[UserName] = @__userName_0
+) AS [t]
+LEFT JOIN (
+    SELECT [u0].[UserRoleId], [u0].[RoleId], [u0].[UserId], [r].[RoleId] AS [RoleId0], [r].[RoleName]
+    FROM [UserRoles] AS [u0]
+    INNER JOIN [Roles] AS [r] ON [u0].[RoleId] = [r].[RoleId]
+) AS [t0] ON [t].[UserId] = [t0].[UserId]
+ORDER BY [t].[UserId], [t0].[UserRoleId]
+2026-06-29 14:37:05,984 [.NET TP Worker] ERROR Microsoft.EntityFrameworkCore.Query - An exception occurred while iterating over the results of a query for context type 'Api_Pagination_Sorting_Demo.Data.HospitalAppointmentDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CreatedDate'.
+Invalid column name 'Email'.
+Invalid column name 'IsActive'.
+Invalid column name 'UserRoleId'.
+Invalid column name 'RoleName'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:4b852a9a-002d-4555-831a-d23b466ff46d
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CreatedDate'.
+Invalid column name 'Email'.
+Invalid column name 'IsActive'.
+Invalid column name 'UserRoleId'.
+Invalid column name 'RoleName'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:4b852a9a-002d-4555-831a-d23b466ff46d
+Error Number:207,State:1,Class:16
+2026-06-29 14:38:58,668 [.NET TP Worker] ERROR Microsoft.EntityFrameworkCore.Database.Command - Failed executing DbCommand (20ms) [Parameters=[@__userName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[UserId], [t].[CreatedDate], [t].[Email], [t].[FullName], [t].[IsActive], [t].[PasswordHash], [t].[UserName], [t0].[UserRoleId], [t0].[RoleId], [t0].[UserId], [t0].[RoleId0], [t0].[RoleName]
+FROM (
+    SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FullName], [u].[IsActive], [u].[PasswordHash], [u].[UserName]
+    FROM [Users] AS [u]
+    WHERE [u].[UserName] = @__userName_0
+) AS [t]
+LEFT JOIN (
+    SELECT [u0].[UserRoleId], [u0].[RoleId], [u0].[UserId], [r].[RoleId] AS [RoleId0], [r].[RoleName]
+    FROM [UserRoles] AS [u0]
+    INNER JOIN [Roles] AS [r] ON [u0].[RoleId] = [r].[RoleId]
+) AS [t0] ON [t].[UserId] = [t0].[UserId]
+ORDER BY [t].[UserId], [t0].[UserRoleId]
+2026-06-29 14:38:58,670 [.NET TP Worker] ERROR Microsoft.EntityFrameworkCore.Query - An exception occurred while iterating over the results of a query for context type 'Api_Pagination_Sorting_Demo.Data.HospitalAppointmentDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CreatedDate'.
+Invalid column name 'Email'.
+Invalid column name 'IsActive'.
+Invalid column name 'UserRoleId'.
+Invalid column name 'RoleName'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:4b852a9a-002d-4555-831a-d23b466ff46d
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CreatedDate'.
+Invalid column name 'Email'.
+Invalid column name 'IsActive'.
+Invalid column name 'UserRoleId'.
+Invalid column name 'RoleName'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:4b852a9a-002d-4555-831a-d23b466ff46d
+Error Number:207,State:1,Class:16
+2026-06-29 14:43:00,495 [.NET TP Worker] ERROR Microsoft.EntityFrameworkCore.Database.Command - Failed executing DbCommand (6ms) [Parameters=[@__userName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[UserId], [t].[CreatedDate], [t].[Email], [t].[FullName], [t].[IsActive], [t].[PasswordHash], [t].[UserName], [t0].[UserRoleId], [t0].[RoleId], [t0].[UserId], [t0].[RoleId0], [t0].[RoleName]
+FROM (
+    SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FullName], [u].[IsActive], [u].[PasswordHash], [u].[UserName]
+    FROM [Users] AS [u]
+    WHERE [u].[UserName] = @__userName_0
+) AS [t]
+LEFT JOIN (
+    SELECT [u0].[UserRoleId], [u0].[RoleId], [u0].[UserId], [r].[RoleId] AS [RoleId0], [r].[RoleName]
+    FROM [UserRoles] AS [u0]
+    INNER JOIN [Roles] AS [r] ON [u0].[RoleId] = [r].[RoleId]
+) AS [t0] ON [t].[UserId] = [t0].[UserId]
+ORDER BY [t].[UserId], [t0].[UserRoleId]
+2026-06-29 14:43:00,497 [.NET TP Worker] ERROR Microsoft.EntityFrameworkCore.Query - An exception occurred while iterating over the results of a query for context type 'Api_Pagination_Sorting_Demo.Data.HospitalAppointmentDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CreatedDate'.
+Invalid column name 'Email'.
+Invalid column name 'IsActive'.
+Invalid column name 'UserRoleId'.
+Invalid column name 'RoleName'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:a41cc998-5de6-4b00-ae68-f0d88b39bc8a
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'CreatedDate'.
+Invalid column name 'Email'.
+Invalid column name 'IsActive'.
+Invalid column name 'UserRoleId'.
+Invalid column name 'RoleName'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:a41cc998-5de6-4b00-ae68-f0d88b39bc8a
+Error Number:207,State:1,Class:16
+2026-06-29 14:51:07,202 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7014
+2026-06-29 14:51:07,207 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5162
+2026-06-29 14:51:07,209 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2026-06-29 14:51:07,209 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2026-06-29 14:51:07,209 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Personal\Hexa May 26 DotNet\Git Notes\Hexa_May_26_DotNet\Asp Core Web API demos\Api_Pagination_Sorting_Demo
