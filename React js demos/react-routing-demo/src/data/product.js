@@ -1,0 +1,38 @@
+export const products = [
+  {
+    id: 1,
+    name: "Laptop",
+    category: "Electronics",
+    price: 55000,
+    rating: 4.5,
+    stock: 10,
+    description: "A powerful laptop for office and learning work.",
+  },
+  {
+    id: 2,
+    name: "Mobile Phone",
+    category: "Electronics",
+    price: 25000,
+    rating: 4.2,
+    stock: 20,
+    description: "A smart mobile phone with good camera quality.",
+  },
+  {
+    id: 3,
+    name: "Headphones",
+    category: "Accessories",
+    price: 2500,
+    rating: 4.0,
+    stock: 15,
+    description: "Wireless headphones with clear sound.",
+  },
+  {
+    id: 4,
+    name: "Study Table",
+    category: "Furniture",
+    price: 7000,
+    rating: 4.3,
+    stock: 5,
+    description: "Wooden study table suitable for students.",
+  },
+];
