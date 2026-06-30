@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Personal\\Hexa May 26 DotNet\\Git Notes\\Hexa_May_26_DotNet\\Asp Core Web API demos\\EmployeeManagementAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8203A55C-2D50-248E-39F8-F4D02DFAD77A}|EmployeeManagementAPI.csproj|c:\\personal\\hexa may 26 dotnet\\git notes\\hexa_may_26_dotnet\\asp core web api demos\\employeemanagementapi\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8203A55C-2D50-248E-39F8-F4D02DFAD77A}|EmployeeManagementAPI.csproj|solutionrelative:controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8203A55C-2D50-248E-39F8-F4D02DFAD77A}|EmployeeManagementAPI.csproj|c:\\personal\\hexa may 26 dotnet\\git notes\\hexa_may_26_dotnet\\asp core web api demos\\employeemanagementapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8203A55C-2D50-248E-39F8-F4D02DFAD77A}|EmployeeManagementAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8203A55C-2D50-248E-39F8-F4D02DFAD77A}|EmployeeManagementAPI.csproj|c:\\personal\\hexa may 26 dotnet\\git notes\\hexa_may_26_dotnet\\asp core web api demos\\employeemanagementapi\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8203A55C-2D50-248E-39F8-F4D02DFAD77A}|EmployeeManagementAPI.csproj|solutionrelative:controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8203A55C-2D50-248E-39F8-F4D02DFAD77A}|EmployeeManagementAPI.csproj|c:\\personal\\hexa may 26 dotnet\\git notes\\hexa_may_26_dotnet\\asp core web api demos\\employeemanagementapi\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8203A55C-2D50-248E-39F8-F4D02DFAD77A}|EmployeeManagementAPI.csproj|solutionrelative:controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8203A55C-2D50-248E-39F8-F4D02DFAD77A}|EmployeeManagementAPI.csproj|c:\\personal\\hexa may 26 dotnet\\git notes\\hexa_may_26_dotnet\\asp core web api demos\\employeemanagementapi\\dtos\\departmentresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -98,7 +98,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -107,30 +107,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{f4e46f1e-cf83-40aa-b568-a627394bc994}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DepartmentsController.cs",
-              "DocumentMoniker": "C:\\Personal\\Hexa May 26 DotNet\\Git Notes\\Hexa_May_26_DotNet\\Asp Core Web API demos\\EmployeeManagementAPI\\Controllers\\DepartmentsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\DepartmentsController.cs",
-              "ToolTip": "C:\\Personal\\Hexa May 26 DotNet\\Git Notes\\Hexa_May_26_DotNet\\Asp Core Web API demos\\EmployeeManagementAPI\\Controllers\\DepartmentsController.cs",
-              "RelativeToolTip": "Controllers\\DepartmentsController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAIA5wBEAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T11:47:26.653Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DepartmentResponseDto.cs",
-              "DocumentMoniker": "C:\\Personal\\Hexa May 26 DotNet\\Git Notes\\Hexa_May_26_DotNet\\Asp Core Web API demos\\EmployeeManagementAPI\\DTOs\\DepartmentResponseDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\DepartmentResponseDto.cs",
-              "ToolTip": "C:\\Personal\\Hexa May 26 DotNet\\Git Notes\\Hexa_May_26_DotNet\\Asp Core Web API demos\\EmployeeManagementAPI\\DTOs\\DepartmentResponseDto.cs",
-              "RelativeToolTip": "DTOs\\DepartmentResponseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T11:26:08.564Z"
             },
             {
               "$type": "Document",
@@ -182,28 +158,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Personal\\Hexa May 26 DotNet\\Git Notes\\Hexa_May_26_DotNet\\Asp Core Web API demos\\EmployeeManagementAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Personal\\Hexa May 26 DotNet\\Git Notes\\Hexa_May_26_DotNet\\Asp Core Web API demos\\EmployeeManagementAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAwwC8AAAApAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAwwC8AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T11:19:59.062Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-08T11:19:59.062Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "EmployeesController.cs",
               "DocumentMoniker": "C:\\Personal\\Hexa May 26 DotNet\\Git Notes\\Hexa_May_26_DotNet\\Asp Core Web API demos\\EmployeeManagementAPI\\Controllers\\EmployeesController.cs",
               "RelativeDocumentMoniker": "Controllers\\EmployeesController.cs",
               "ToolTip": "C:\\Personal\\Hexa May 26 DotNet\\Git Notes\\Hexa_May_26_DotNet\\Asp Core Web API demos\\EmployeeManagementAPI\\Controllers\\EmployeesController.cs",
               "RelativeToolTip": "Controllers\\EmployeesController.cs",
-              "ViewState": "AgIAAKoAAAAAAAAAAADwv8EAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAEIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T12:00:20.045Z"
+              "WhenOpened": "2026-06-08T12:00:20.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DepartmentResponseDto.cs",
+              "DocumentMoniker": "C:\\Personal\\Hexa May 26 DotNet\\Git Notes\\Hexa_May_26_DotNet\\Asp Core Web API demos\\EmployeeManagementAPI\\DTOs\\DepartmentResponseDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\DepartmentResponseDto.cs",
+              "ToolTip": "C:\\Personal\\Hexa May 26 DotNet\\Git Notes\\Hexa_May_26_DotNet\\Asp Core Web API demos\\EmployeeManagementAPI\\DTOs\\DepartmentResponseDto.cs",
+              "RelativeToolTip": "DTOs\\DepartmentResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T11:26:08.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DepartmentsController.cs",
+              "DocumentMoniker": "C:\\Personal\\Hexa May 26 DotNet\\Git Notes\\Hexa_May_26_DotNet\\Asp Core Web API demos\\EmployeeManagementAPI\\Controllers\\DepartmentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DepartmentsController.cs",
+              "ToolTip": "C:\\Personal\\Hexa May 26 DotNet\\Git Notes\\Hexa_May_26_DotNet\\Asp Core Web API demos\\EmployeeManagementAPI\\Controllers\\DepartmentsController.cs",
+              "RelativeToolTip": "Controllers\\DepartmentsController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAIA5wBEAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T11:47:26.653Z"
             },
             {
               "$type": "Document",

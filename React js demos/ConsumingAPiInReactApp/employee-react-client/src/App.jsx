@@ -5,14 +5,15 @@ import heroImg from "./assets/hero.png";
 import "./App.css";
 import { EmployeeTable } from "./compoenents/EmployeeTable";
 import { EmployeeFetchDemo } from "./pages/EmployeeFetchDemo";
-
+import { EmployeeAxiosDemo } from "./pages/EmployeeAxiosDemo";
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
       <div className="app">
-        <EmployeeFetchDemo />
+        {/* <EmployeeFetchDemo /> */}
+        <EmployeeAxiosDemo />
       </div>
     </>
   );
