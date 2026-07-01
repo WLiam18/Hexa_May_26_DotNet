@@ -11,6 +11,9 @@ import { LoginPanel } from "./components/LoginPanel";
 import { Dashboard } from "./components/Dashboard";
 import { ThemeProvider } from "./context/ThemeContext";
 import { ThemeButton } from "./components/ThemeButton";
+import { CartProvider } from "./context/CartContext";
+import { ProductList } from "./components/ProductList";
+import { CartSummary } from "./components/CartSummary";
 function App() {
   // const loggedInUser = {
   //   name: "Geetha",
@@ -20,18 +23,26 @@ function App() {
   return (
     <>
       {/* <UserContext.Provider value={loggedInUser}> */}
-      <UserProvider>
-        <ThemeProvider>
-          <div className="app-container">
-            <h1> React UseContext Hook Demo</h1>
-            <ThemeButton />
-            <Header />
-            <LoginPanel />
-            <Dashboard />
-            {/* <BasicProfile /> */}
-          </div>
-        </ThemeProvider>
-      </UserProvider>
+      <CartProvider>
+        <div className="app-container">
+          <h1> React UseContext Hook Demo</h1>
+          <ProductList />
+          <CartSummary />
+        </div>
+      </CartProvider>
+      {/* <UserProvider>
+          <ThemeProvider>
+            <div className="app-container">
+              <h1> React UseContext Hook Demo</h1>
+              <ThemeButton />
+              <Header />
+              <LoginPanel />
+              <Dashboard />
+              <BasicProfile /> 
+            </div>
+          </ThemeProvider>
+        </UserProvider>  */}
+
       {/* </UserContext.Provider> */}
     </>
   );
