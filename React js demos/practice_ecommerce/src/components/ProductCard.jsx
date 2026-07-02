@@ -2,18 +2,34 @@ function ProductCard({ product, user, onDeleteProduct, isAdmin }) {
   const { name, price, category, stock, rating, seller } = product;
 
   return (
-    <div>
-      <h4>{name}</h4>
-      <p>Price: ${price}</p>
-      <p>Category: {category}</p>
-      <p>Stock: {stock}</p>
-      <p>Rating: {rating || "N/A"}</p>
-      <p>Seller: {seller}</p>
-      {isAdmin && rating <= 2 && (
-        <button onClick={() => onDeleteProduct(product.id)}>
-          Remove
-        </button>
-      )}
+    <div className="card h-100 shadow-sm">
+      <div className="card-body">
+        <h5 className="card-title">{name}</h5>
+        <p className="card-text mb-1">
+          <strong>Price:</strong> {price}
+        </p>
+        <p className="card-text mb-1">
+          <strong>Category:</strong> {category}
+        </p>
+        <p className="card-text mb-1">
+          <strong>Stock:</strong> {stock}
+        </p>
+        <p className="card-text mb-1">
+          <strong>Rating:</strong> {rating || "N/A"}
+        </p>
+        <p className="card-text mb-2">
+          <strong>Seller:</strong> {seller}
+        </p>
+        
+        {isAdmin && rating <= 2 && (
+          <button 
+            className="btn btn-danger btn-sm mt-2"
+            onClick={() => onDeleteProduct(product.id)}
+          >
+            Remove
+          </button>
+        )}
+      </div>
     </div>
   );
 }
