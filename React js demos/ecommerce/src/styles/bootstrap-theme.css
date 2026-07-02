@@ -1,0 +1,33 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+body{
+    background-color: #f8fafc;
+}
+
+.login-page{
+min-height: 100vh;
+background: linear-gradient(135deg,#e0f2fe,#f8fafc);
+}
+
+.product-img{
+    height:220px;
+    object-fit: cover;
+}
+
+.admin-dahsboard-bg{
+    background:linear-gradient(135deg,#e0f2fe,#f8fafc);
+}
+
+.customer-dahsboard-bg{
+    background:linear-gradient(135deg,#eff6ff, #f8fafc);
+    min-height: 100vh;
+}
+
+.product-card-hover{
+    transition: transfrom 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card-hover :hover{
+    transform:translateY(-4px);
+    box-shadow:  0 1rem 2rem rgba(0,0,0,0.12);
+}

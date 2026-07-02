@@ -34,52 +34,65 @@ export function ProductCard({
   }
   return (
     <>
-      <article className={isSeller ? "seller-product-card" : "product-card"}>
-        <img src={image} alt={name} />
-        <div className="product-content">
-          <span className="category-badge">{category}</span>
+      <article className="card h-100 shadow-sm border-0 product-card-hover">
+        <img src={image} alt={name} className="card-img-top product-img" />
+        <div className="card-body d-flex flex-column">
+          <span className="badge text-bg-info align-self-start mb-2">
+            {category}
+          </span>
 
-          <h3>{name}</h3>
-          <p>{description}</p>
-          <p>
+          <h2 className=" h5 card-title text-primary">{name}</h2>
+          <p className="card-text text-muted">{description}</p>
+          <p className="mb-1">
             <strong>Selelr:</strong> {seller}
           </p>
-          <p>
+          <p className="mb-1">
             <strong>Rating:</strong> {rating}
           </p>
-          <h3> Price: {price}</h3>
+          <h3 className="h5 mt-2"> ₹{price}</h3>
 
           {stock === 0 ? (
-            <p className="out-stock">Out Of Stock</p>
+            <p className="badge text-bg-danger align-self-start">
+              Out Of Stock
+            </p>
           ) : stock <= 5 ? (
-            <p className="low-stock">Only {stock} left.</p>
+            <p className="badge text-bg-warning align-self-start">
+              Only {stock} left.
+            </p>
           ) : (
-            <p className="in-stock">In Stock: {stock}</p>
+            <p className="badge text-bg-success align-self-start">
+              In Stock: {stock}
+            </p>
           )}
-
-          <button type="button" disabled={stock === 0}>
-            {stock === 0 ? "Unavailable" : "Add To Cart"}
-          </button>
-
-          {isSeller && (
+          <div className="mt-auto d-flex flex-wrap gap-2">
             <button
               type="button"
-              className="seller-edit-button"
-              onClick={() => setIsEditing(true)}
+              className="btn btn-primary"
+              disabled={stock === 0}
             >
-              Update Product
+              {stock === 0 ? "Unavailable" : "Add To Cart"}
             </button>
-          )}
 
-          {isAdmin && rating <= 1 && (
-            <button
-              type="button"
-              className="admin-remove-btn"
-              onClick={() => onRemoveLowRatedProduct(product.id)}
-            >
-              Remove Low Rated Product
-            </button>
-          )}
+            {isSeller && (
+              <button
+                type="button"
+                className="btn btn-warning"
+                onClick={() => setIsEditing(true)}
+              >
+                Update Product
+              </button>
+            )}
+
+            {isAdmin && rating <= 1 && (
+              <button
+                type="button"
+                className="btn btn-danger"
+                onClick={() => onRemoveLowRatedProduct(product.id)}
+              >
+                Remove Low Rated Product
+              </button>
+            )}
+          </div>
         </div>
       </article>
       {/* <div className="product-card">

@@ -1,6 +1,7 @@
 export function SortDropdown({ sortBy, onSortChange }) {
   return (
     <select
+      className="form-select"
       value={sortBy}
       onChange={(event) => onSortChange(event.target.value)}
       className="filter-select"
