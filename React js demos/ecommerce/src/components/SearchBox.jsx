@@ -4,6 +4,7 @@ export function SearchBox({ searchText, onSearchChange }) {
       type="text"
       placeholder="Search product by name"
       value={searchText}
+      className="form-control"
       onChange={(event) => onSearchChange(event.target.value)}
       className="search-box"
     />

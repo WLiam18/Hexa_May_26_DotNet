@@ -109,115 +109,143 @@ export function ProductForm({
 
   return (
     <>
-      <section className="product-form-card">
-        <h2>{mode === "add" ? "Add New Product" : "Update Product"}</h2>
-      </section>
+      <section className="card border-0 shadow-sm mb-4">
+        <div className="card-body">
+          <h2 className="h4 text-warning fw-bold mb-3">
+            {mode === "add" ? "Add New Product" : "Update Product"}
+          </h2>
 
-      <form className="product-form" onSubmit={handleSubmit}>
-        {errorMessage && <p className="form-error">{errorMessage}</p>}
-        {successMessage && <p className="form-success">{successMessage}</p>}
-        <div className="form-row">
-          <div className="form-group">
-            <label htmlFor={`${mode}-name`}>Product Name</label>
-            <input
-              type="text"
-              id={`${mode}-name`}
-              name="name"
-              value={productData.name}
-              onChange={handleInputChange}
-              placeholder="Enter  Product name"
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor={`${mode}-category`}>Category</label>
-            <select
-              id={`${mode}-category`}
-              name="category"
-              value={productData.category}
-              onChange={handleInputChange}
-            >
-              <option value="Electronics">Electronics</option>
-              <option value="Home">Home</option>
-              <option value="Fashion">Fashion</option>
-              <option value="Kitchen">Kitchen</option>
-            </select>
-          </div>
+          {errorMessage && (
+            <div className="alert alert-danger">{errorMessage}</div>
+          )}
+          {successMessage && (
+            <div className="alert alert-success">{successMessage}</div>
+          )}
+          <form onSubmit={handleSubmit}>
+            <div className="row g-3">
+              <div className="col-md-6">
+                <label htmlFor={`${mode}-name`} className="form-label">
+                  Product Name
+                </label>
+                <input
+                  type="text"
+                  id={`${mode}-name`}
+                  name="name"
+                  className="form-control"
+                  value={productData.name}
+                  onChange={handleInputChange}
+                  placeholder="Enter  Product name"
+                />
+              </div>
+              <div className="col-md-6">
+                <label htmlFor={`${mode}-category`} className="form-label">
+                  Category
+                </label>
+                <select
+                  id={`${mode}-category`}
+                  name="category"
+                  className="form-select"
+                  value={productData.category}
+                  onChange={handleInputChange}
+                >
+                  <option value="Electronics">Electronics</option>
+                  <option value="Home">Home</option>
+                  <option value="Fashion">Fashion</option>
+                  <option value="Kitchen">Kitchen</option>
+                </select>
+              </div>
+
+              <div className="col-md-4">
+                <label htmlFor={`${mode}-price`} className="form-label">
+                  Price
+                </label>
+                <input
+                  id={`${mode}-price`}
+                  name="price"
+                  type="number"
+                  className="form-control"
+                  value={productData.price}
+                  onChange={handleInputChange}
+                  placeholder="Enter price"
+                />
+              </div>
+              <div className="col-md-4">
+                <label htmlFor={`${mode}-stock`} className="form-label">
+                  Stock
+                </label>
+                <input
+                  id={`${mode}-stock`}
+                  name="stock"
+                  type="number"
+                  className="form-control"
+                  value={productData.stock}
+                  onChange={handleInputChange}
+                  placeholder="Enter stock"
+                />
+              </div>
+              <div className="col-md-4">
+                <label htmlFor={`${mode}-rating`} className="form-label">
+                  Rating
+                </label>
+                <input
+                  id={`${mode}-rating`}
+                  name="rating"
+                  type="number"
+                  step="0.1"
+                  min="1"
+                  max="5"
+                  className="form-control"
+                  value={productData.rating}
+                  onChange={handleInputChange}
+                  placeholder="1 to 5"
+                />
+              </div>
+              <div className="col-md-6">
+                <label htmlFor={`${mode}-seller`} className="form-label">
+                  Seller
+                </label>
+                <input
+                  id={`${mode}-seller`}
+                  name="seller"
+                  type="text"
+                  className="form-control"
+                  value={productData.seller}
+                  onChange={handleInputChange}
+                  placeholder="Enter seller name"
+                />
+              </div>
+              <div className="col-12">
+                <label htmlFor={`${mode}-description`} className="form-label">
+                  Description
+                </label>
+                <input
+                  id={`${mode}-description`}
+                  name="description"
+                  type="text"
+                  className="form-control"
+                  value={productData.description}
+                  onChange={handleInputChange}
+                  placeholder="Enter product description"
+                />
+              </div>
+              <div className="col-12 d-flex gap-2">
+                <button type="submit" className="btn btn-warning">
+                  {mode === "add" ? "Add Product" : "Save changes"}
+                </button>
+                {mode === "edit" && (
+                  <button
+                    type="button"
+                    className="btn btn-outlint-secondary"
+                    onClick={onCancel}
+                  >
+                    Cancel
+                  </button>
+                )}
+              </div>
+            </div>
+          </form>
         </div>
-        <div className="form-row">
-          <div className="form-group">
-            <label htmlFor={`${mode}-price`}>Price</label>
-            <input
-              id={`${mode}-price`}
-              name="price"
-              type="number"
-              value={productData.price}
-              onChange={handleInputChange}
-              placeholder="Enter price"
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor={`${mode}-stock`}>Stock</label>
-            <input
-              id={`${mode}-stock`}
-              name="stock"
-              type="number"
-              value={productData.stock}
-              onChange={handleInputChange}
-              placeholder="Enter stock"
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor={`${mode}-rating`}>Rating</label>
-            <input
-              id={`${mode}-rating`}
-              name="rating"
-              type="number"
-              step="0.1"
-              min="1"
-              max="5"
-              value={productData.rating}
-              onChange={handleInputChange}
-              placeholder="1 to 5"
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor={`${mode}-seller`}>Seller</label>
-            <input
-              id={`${mode}-seller`}
-              name="seller"
-              type="text"
-              value={productData.seller}
-              onChange={handleInputChange}
-              placeholder="Enter seller name"
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor={`${mode}-description`}>Description</label>
-            <input
-              id={`${mode}-description`}
-              name="description"
-              type="text"
-              value={productData.description}
-              onChange={handleInputChange}
-              placeholder="Enter product description"
-            />
-          </div>
-          <div className="form-actions">
-            <button type="submit" className="primary-btn">
-              {mode === "add" ? "Add Product" : "Save changes"}
-            </button>
-            {mode === "edit" && (
-              <button
-                type="button"
-                className="secondary-btn"
-                onClick={onCancel}
-              >
-                Cancel
-              </button>
-            )}
-          </div>
-        </div>
-      </form>
+      </section>
     </>
   );
 }

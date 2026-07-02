@@ -10,10 +10,10 @@ export function ProductList({
   isSeller,
 }) {
   if (products.length === 0) {
-    return <p className="empty-message">No Products found.</p>;
+    return <div className="alert alert-warning">No Products found.</div>;
   }
   return (
-    <div className={isSeller ? "seller-product-grid" : "product-grid"}>
+    <div className="row g-4">
       {products.map((product) => (
         <ProductCard
           key={product.id}
